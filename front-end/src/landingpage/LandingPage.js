@@ -17,7 +17,7 @@ class LandingPage extends Component {
         <div className="hero-body">
           <div className="container has-text-centered">
             <div className="column is-5 is-offset-7">
-              <Title isSize={1} hasTextColor="dark">
+              <Title isSize={1} className="heroTitle">
                 {slogan}
               </Title>
             </div>

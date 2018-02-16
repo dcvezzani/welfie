@@ -3,8 +3,14 @@ body {
   font-family: "Fira Sans", serif; }
 
 .hero.is-info {
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 255, 0, 0.1)), url("./welfie black and white flipped.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("./welfie black and white flipped.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+
+.heroTitle {
+  color: #97c632 !important;
+  text-shadow: 3px 3px #0a0a0a;
+  padding: 3rem;
+  background: radial-gradient(rgba(0, 0, 0, 0.66), transparent); }
