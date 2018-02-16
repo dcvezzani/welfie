@@ -1,0 +1,12 @@
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.loginButton {
+  background-color: #6a9905;
+  color: #fff;
+  text-shadow: 2px 2px #7a7a7a; }
+
+.social {
+  color: #6a9905 !important; }

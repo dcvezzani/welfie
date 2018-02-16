@@ -1,0 +1,16 @@
+@import "../../welfie.scss";
+button {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.loginButton {
+    background-color: $green1;
+    color: #fff;
+    text-shadow: 2px 2px $grey;
+}
+
+.social {
+    color: $green1 !important;
+}
