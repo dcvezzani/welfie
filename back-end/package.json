@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "watch": "PORT=3000 DEBUG=welfie-back-end.* ./node_modules/.bin/nodemon ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
@@ -15,6 +16,7 @@
     "google-auth-library": "^1.2.1",
     "jade": "~1.11.0",
     "jsonwebtoken": "^8.1.1",
+    "lodash": "^4.17.5",
     "moment": "^2.20.1",
     "morgan": "~1.9.0",
     "serve-favicon": "~2.4.5",
@@ -22,6 +24,7 @@
   },
   "devDependencies": {
     "knex": "^0.14.3",
-    "knex-migrate": "^1.5.1"
+    "knex-migrate": "^1.5.1",
+    "nodemon": "^1.15.0"
   }
 }
