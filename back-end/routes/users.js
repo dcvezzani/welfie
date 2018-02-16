@@ -18,8 +18,8 @@ router.get('/', function(req, res, next) {
 
 /* GET, SHOW user listing. */
 router.get('/:user_id', function(req, res, next) {
-  orm.User.where({id: req.params.user_id}).fetch().then((model) => {
-			res.json({ user: model.attributes });
+  orm.User.where({id: req.params.user_id}).fetch({withRelated: ['messages']}).then((model) => {
+			res.json({ user: model.attributes, messages: model.related('messages') });
   });
 });
 

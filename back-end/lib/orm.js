@@ -2,15 +2,17 @@ var config = require('../knexfile');
 var knex = require('knex')(config.development);
 var bookshelf = require('bookshelf')(knex);
 
-var Orm = {
-  User: bookshelf.Model.extend({
-    tableName: 'users',
-    // posts: function() {
-    //   return this.hasMany(Posts);
-    // }
-  })
-}
+var Message = bookshelf.Model.extend({
+  tableName: 'messages',
+})
 
-module.exports = Orm;
+var User = bookshelf.Model.extend({
+  tableName: 'users',
+  messages: function() {
+    return this.hasMany(Message);
+  }
+})
+
+module.exports = {Message: Message, User: User};
 
 
