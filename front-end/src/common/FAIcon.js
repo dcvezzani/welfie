@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import classNames from "class-names";
+import classNames from "classnames";
 import { Icon } from "bloomer/lib/elements/Icon";
 
 class FAIcon extends Component {
