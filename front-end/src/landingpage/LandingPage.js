@@ -8,16 +8,22 @@ import {
   Container,
   Column,
   Columns,
-  Image
+  Image,
+  Button,
+  Delete
 } from "bloomer";
+import { Player, BigPlayButton } from "video-react";
+import FAIcon from "../common/FAIcon";
 
 import "./LandingPage.css";
+import "../../node_modules/video-react/dist/video-react.css";
 import WelfieLogo from "./logo.png";
-import FAIcon from "../common/FAIcon";
+import WelfieMovie from "./welfie.mov";
 
 class LandingPage extends Component {
   state = {
-    playIconHovered: false
+    playIconHovered: false,
+    videoIsPlaying: false
   };
 
   highlightPlayIcon = () => {
@@ -27,10 +33,44 @@ class LandingPage extends Component {
   normalPlayIcon = () => {
     this.setState({ playIconHovered: false });
   };
+
+  playVideo = () => {
+    this.setState({ videoIsPlaying: true });
+    this.refs.player.play();
+  };
+
+  closeVideo = () => {
+    this.refs.player.pause();
+    this.setState({ videoIsPlaying: false });
+  };
+
   render() {
     const slogan =
       "Promoting financial wellness tools that help you live more and worry less.";
-    const { playIconHovered } = this.state;
+    const { playIconHovered, videoIsPlaying } = this.state;
+    const playerIcon = (
+      <div
+        onMouseOver={this.highlightPlayIcon}
+        onMouseOut={this.normalPlayIcon}
+        onClick={this.playVideo}
+        style={{ color: playIconHovered ? "#97C632" : "#000000" }}
+        hidden={videoIsPlaying}
+      >
+        <FAIcon iconType="play-circle" size="large" />
+      </div>
+    );
+    const videoPlayer = (
+      <div hidden={!videoIsPlaying}>
+        <Player ref="player" src={WelfieMovie} isFullScreen height={0}>
+          <BigPlayButton />
+        </Player>
+        <br />
+        <Button isColor="danger" isSize="small" onClick={this.closeVideo}>
+          <Delete isSize="small" />
+          Close Video
+        </Button>
+      </div>
+    );
     return (
       <Hero isSize="medium" isColor="white" isFullHeight>
         <HeroHeader>
@@ -48,14 +88,13 @@ class LandingPage extends Component {
                     desktop: 7
                   }}
                 >
-                  <div
-                    onMouseOver={this.highlightPlayIcon}
-                    onMouseOut={this.normalPlayIcon}
-                    style={{ color: playIconHovered ? "#97C632" : "#000000" }}
+                  {playerIcon}
+                  {videoPlayer}
+                  <Title
+                    isSize={1}
+                    className="heroTitle"
+                    hidden={videoIsPlaying}
                   >
-                    <FAIcon iconType="play-circle" size="large" />
-                  </div>
-                  <Title isSize={1} className="heroTitle">
                     {slogan}
                   </Title>
                 </Column>

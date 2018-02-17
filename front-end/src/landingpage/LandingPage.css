@@ -21,3 +21,6 @@ body {
   text-shadow: 3px 3px #0a0a0a;
   padding: 3rem;
   background: radial-gradient(black, rgba(0, 0, 0, 0.75), transparent, transparent); }
+
+.video-react-big-play-button {
+  display: none !important; }
