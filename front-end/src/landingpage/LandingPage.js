@@ -7,10 +7,12 @@ import {
   HeroBody,
   Container,
   Column,
-  Columns
+  Columns,
+  Image
 } from "bloomer";
 
 import "./LandingPage.css";
+import WelfieLogo from "./logo.png";
 
 class LandingPage extends Component {
   render() {
@@ -23,7 +25,16 @@ class LandingPage extends Component {
           <HeroBody>
             <Container hasTextAlign="centered">
               <Columns>
-                <Column isSize={5} isOffset={7}>
+                <Column
+                  isSize={{
+                    tablet: 12,
+                    desktop: 5
+                  }}
+                  isOffset={{
+                    tablet: 0,
+                    desktop: 7
+                  }}
+                >
                   <Title isSize={1} className="heroTitle">
                     {slogan}
                   </Title>

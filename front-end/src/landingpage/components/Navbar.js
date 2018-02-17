@@ -14,6 +14,7 @@ import {
 } from "bloomer";
 import "./Navbar.css";
 import SocialIcon from "./SocialIcon";
+import WelfieLogo from "../logo.png";
 class NavBar extends Component {
   state = {
     isActive: false
@@ -28,9 +29,7 @@ class NavBar extends Component {
       <Navbar isTransparent>
         <NavbarBrand>
           <NavbarItem>
-            <Title isSize={3} hasTextColor="dark">
-              welfie.co
-            </Title>
+            <img src={WelfieLogo} />
           </NavbarItem>
           <NavbarBurger isActive={isActive} onClick={this.toggleNav} />
         </NavbarBrand>

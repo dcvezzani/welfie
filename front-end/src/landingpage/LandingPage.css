@@ -3,15 +3,21 @@ body {
   font-family: "Fira Sans", serif; }
 
 .hero {
-  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("./welfie black and white flipped.jpg") no-repeat center center fixed;
+  background: linear-gradient(black, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("./welfie black and white flipped.jpg") no-repeat left center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100%; }
+  .hero .hero-body img {
+    margin: 0 auto;
+    margin-top: -100px; }
+  @media screen and (max-width: 1023px) {
+    .hero.is-white .navbar-menu {
+      background-color: rgba(0, 0, 0, 0.6); } }
 
 .heroTitle {
   color: #97c632 !important;
   text-shadow: 3px 3px #0a0a0a;
   padding: 3rem;
-  background: radial-gradient(rgba(0, 0, 0, 0.66), transparent); }
+  background: radial-gradient(black, rgba(0, 0, 0, 0.75), transparent, transparent); }

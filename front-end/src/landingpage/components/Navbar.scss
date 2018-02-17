@@ -14,3 +14,12 @@ button {
 .social {
     color: $green1 !important;
 }
+
+.navbar-item img {
+    max-height: 4rem;
+    margin: 0 auto;
+}
+
+.navbar-burger span {
+    color: $white !important;
+}
