@@ -13,11 +13,24 @@ import {
 
 import "./LandingPage.css";
 import WelfieLogo from "./logo.png";
+import FAIcon from "../common/FAIcon";
 
 class LandingPage extends Component {
+  state = {
+    playIconHovered: false
+  };
+
+  highlightPlayIcon = () => {
+    this.setState({ playIconHovered: true });
+  };
+
+  normalPlayIcon = () => {
+    this.setState({ playIconHovered: false });
+  };
   render() {
     const slogan =
       "Promoting financial wellness tools that help you live more and worry less.";
+    const { playIconHovered } = this.state;
     return (
       <Hero isSize="medium" isColor="white" isFullHeight>
         <HeroHeader>
@@ -35,6 +48,13 @@ class LandingPage extends Component {
                     desktop: 7
                   }}
                 >
+                  <div
+                    onMouseOver={this.highlightPlayIcon}
+                    onMouseOut={this.normalPlayIcon}
+                    style={{ color: playIconHovered ? "#97C632" : "#000000" }}
+                  >
+                    <FAIcon iconType="play-circle" size="large" />
+                  </div>
                   <Title isSize={1} className="heroTitle">
                     {slogan}
                   </Title>
