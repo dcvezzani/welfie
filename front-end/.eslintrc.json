@@ -1,0 +1,8 @@
+{
+  "extends": "react-app",
+  "plugins": ["react", "babel"],
+  "rules": {
+    "complexity": 0,
+    "no-unused-vars": 0
+  }
+}

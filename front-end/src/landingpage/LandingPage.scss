@@ -1,39 +1,82 @@
 @import "../welfie.scss";
 html,
 body {
-    font-family: "Fira Sans", serif;
+  font-family: "Fira Sans", serif;
 }
 
 .hero {
-    background: linear-gradient( rgba(0, 0, 0, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("./welfie black and white flipped.jpg") no-repeat left center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    .hero-body {
-        img {
-            // max-width: 327px;
-            margin: 0 auto;
-            margin-top: -100px;
-        }
+  background: linear-gradient(
+      rgba(0, 0, 0, 1),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    url("./welfie black and white flipped.jpg") no-repeat left center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  .hero-body {
+    img {
+      // max-width: 327px;
+      margin: 0 auto;
+      margin-top: -100px;
     }
-    @media screen and (max-width: 1023px) {
-        &.is-white {
-            .navbar-menu {
-                background-color: rgba(0, 0, 0, 0.6);
-            }
-        }
+  }
+  @media screen and (min-width: 769px) {
+    &.is-medium {
+      .hero-body {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
     }
+  }
+  @media screen and (max-width: 1023px) {
+    &.is-white {
+      .navbar-menu {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
 }
 
 .heroTitle {
-    color: $green !important;
-    text-shadow: 3px 3px $black;
-    padding: 3rem;
-    background: radial-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  color: $green1 !important; // text-shadow: 3px 3px $black;
+  text-transform: uppercase;
+  font-size: 4em !important;
+  text-shadow: 2px 2px $grey-darker;
 }
 
 .video-react-big-play-button {
-    display: none !important;
+  display: none !important;
+}
+
+.heroColumn {
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+section {
+  h1.title.is-1 {
+    margin-bottom: 0 !important;
+  }
+}
+
+.modal-card,
+.modal-content {
+  width: calc(100vh + 25vw);
+}
+
+.play-button-container {
+  color: #000;
+  &:hover {
+    color: $green;
+  }
+  .play-button {
+    transition: width 0.5s, height 0.5s;
+    &:hover {
+      width: 30%;
+      height: 30%;
+    }
+  }
 }

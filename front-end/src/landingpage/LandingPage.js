@@ -10,7 +10,17 @@ import {
   Columns,
   Image,
   Button,
-  Delete
+  Delete,
+  Section,
+  Modal,
+  ModalContent,
+  ModalClose,
+  ModalBackground,
+  ModalCard,
+  ModalCardBody,
+  ModalCardHeader,
+  ModalCardFooter,
+  ModalCardTitle
 } from "bloomer";
 import { Player, BigPlayButton } from "video-react";
 import FAIcon from "../common/FAIcon";
@@ -22,16 +32,7 @@ import WelfieMovie from "./welfie.mov";
 
 class LandingPage extends Component {
   state = {
-    playIconHovered: false,
     videoIsPlaying: false
-  };
-
-  highlightPlayIcon = () => {
-    this.setState({ playIconHovered: true });
-  };
-
-  normalPlayIcon = () => {
-    this.setState({ playIconHovered: false });
   };
 
   playVideo = () => {
@@ -45,32 +46,48 @@ class LandingPage extends Component {
   };
 
   render() {
-    const slogan =
-      "Promoting financial wellness tools that help you live more and worry less.";
+    const { showDashboard } = this.props;
     const { playIconHovered, videoIsPlaying } = this.state;
     const playerIcon = (
-      <div
-        onMouseOver={this.highlightPlayIcon}
-        onMouseOut={this.normalPlayIcon}
-        onClick={this.playVideo}
-        style={{ color: playIconHovered ? "#97C632" : "#000000" }}
-        hidden={videoIsPlaying}
-      >
-        <FAIcon iconType="play-circle" size="large" />
+      <div className="play-button-container" onClick={this.playVideo}>
+        <FAIcon
+          iconType="play-circle"
+          size="large"
+          extraClasses="play-button"
+        />
       </div>
     );
     const videoPlayer = (
-      <div hidden={!videoIsPlaying}>
-        <Player ref="player" src={WelfieMovie} isFullScreen height={0}>
-          <BigPlayButton />
-        </Player>
-        <br />
-        <Button isColor="danger" isSize="small" onClick={this.closeVideo}>
-          <Delete isSize="small" />
-          Close Video
-        </Button>
-      </div>
+      <Modal isActive={videoIsPlaying}>
+        <ModalBackground />
+        <ModalContent>
+          <Player ref="player" src={WelfieMovie}>
+            <BigPlayButton />
+          </Player>
+        </ModalContent>
+        <ModalClose isSize="large" onClick={this.closeVideo} />
+      </Modal>
     );
+
+    const textBlock = (
+      <Section>
+        <Title isSize={3}>
+          Promoting financial wellness tools that help you
+        </Title>
+        <Title isSize={1} className="heroTitle">
+          live more
+        </Title>
+        <Title isSize={1}>&</Title>
+        <Title isSize={1} className="heroTitle">
+          worry less!
+        </Title>
+        <br />
+        <Button isSize="large" isColor="success" onClick={showDashboard}>
+          Learn More
+        </Button>
+      </Section>
+    );
+
     return (
       <Hero isSize="medium" isColor="white" isFullHeight>
         <HeroHeader>
@@ -79,6 +96,7 @@ class LandingPage extends Component {
             <Container hasTextAlign="centered">
               <Columns>
                 <Column
+                  className="heroColumn"
                   isSize={{
                     tablet: 12,
                     desktop: 5
@@ -90,13 +108,7 @@ class LandingPage extends Component {
                 >
                   {playerIcon}
                   {videoPlayer}
-                  <Title
-                    isSize={1}
-                    className="heroTitle"
-                    hidden={videoIsPlaying}
-                  >
-                    {slogan}
-                  </Title>
+                  {textBlock}
                 </Column>
               </Columns>
             </Container>
