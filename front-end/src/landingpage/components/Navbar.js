@@ -34,7 +34,11 @@ class NavBar extends Component {
           </NavbarItem>
           <NavbarBurger isActive={isActive} onClick={this.toggleNav} />
         </NavbarBrand>
-        <NavbarMenu isActive={isActive} onClick={this.toggleNav}>
+        <NavbarMenu
+          isActive={isActive}
+          onClick={this.toggleNav}
+          isColor="white"
+        >
           <NavbarEnd>
             <NavbarItem>
               <Button id="blog" isOutlined>

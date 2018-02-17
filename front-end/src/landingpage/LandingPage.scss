@@ -4,12 +4,13 @@ body {
     font-family: "Fira Sans", serif;
 }
 
-.hero.is-info {
+.hero {
     background: linear-gradient( rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("./welfie black and white flipped.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100%;
 }
 
 .heroTitle {
