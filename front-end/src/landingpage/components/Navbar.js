@@ -26,7 +26,7 @@ class NavBar extends Component {
   render() {
     const { isActive } = this.state;
     return (
-      <Navbar isTransparent>
+      <Navbar className="is-fixed-top">
         <NavbarBrand>
           <NavbarItem>
             <img src={WelfieLogo} />
@@ -36,17 +36,25 @@ class NavBar extends Component {
         <NavbarMenu isActive={isActive} onClick={this.toggleNav}>
           <NavbarEnd>
             <NavbarItem>
-              <Button id="blog" isOutlined>
+              <Button id="blog" isOutlined href="https://welfie.co/blog/">
                 <span>Blog</span>
               </Button>
             </NavbarItem>
             <NavbarItem>
-              <Button className="loginButton">Client Login</Button>
+              <Button className="loginButton" href="#">
+                Client Login
+              </Button>
             </NavbarItem>
             <NavbarDivider />
-            <SocialIcon iconType="facebook" />
-            <SocialIcon iconType="twitter" />
-            <SocialIcon iconType="linkedin" />
+            <SocialIcon
+              iconType="facebook"
+              link="https://facebook.com/welfie.co"
+            />
+            <SocialIcon iconType="twitter" link="https://twitter.com/welfie" />
+            <SocialIcon
+              iconType="linkedin"
+              link="https://linkedin.com/in/welfie"
+            />
           </NavbarEnd>
         </NavbarMenu>
       </Navbar>

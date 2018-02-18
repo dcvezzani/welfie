@@ -1,19 +1,26 @@
+html,
+body {
+  font-family: "Muli", "Fira Sans", serif; }
+
 button {
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase; }
 
 .loginButton {
-  background-color: #6a9905;
-  color: #fff;
-  text-shadow: 2px 2px #7a7a7a; }
+  background-color: #97c632;
+  color: #fff; }
 
-.social {
-  color: #6a9905 !important; }
+.button.social {
+  padding: 0;
+  border: none;
+  font-size: 1.5rem;
+  color: #97c632 !important; }
 
 .navbar-item img {
   max-height: 4rem;
   margin: 0 auto; }
 
-.navbar-burger span {
-  color: white !important; }
+.hero.is-white .navbar {
+  background: white;
+  border-bottom: solid 1px #7a7a7a; }

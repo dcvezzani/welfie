@@ -1,21 +1,23 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { NavbarItem } from "bloomer/lib/components/Navbar/NavbarItem";
-import { Icon } from "bloomer/lib/elements/Icon";
+import { Button, Icon, NavbarItem } from "bloomer";
 
 class SocialIcon extends Component {
-    render() {
-        const { iconType } = this.props;
-        return (
-            <NavbarItem className="social">
-                <Icon isSize="medium" className={`fab fa-${iconType}`} />
-            </NavbarItem>
-        );
-    }
+  render() {
+    const { iconType, link } = this.props;
+    return (
+      <NavbarItem>
+        <Button href={link} className="social">
+          <Icon isSize="medium" className={`fab fa-${iconType}`} />
+        </Button>
+      </NavbarItem>
+    );
+  }
 }
 
 SocialIcon.propTypes = {
-    iconType: PropTypes.string.isRequired
+  iconType: PropTypes.string.isRequired,
+  link: PropTypes.string
 };
 
 export default SocialIcon;

@@ -70,21 +70,29 @@ class LandingPage extends Component {
     );
 
     const textBlock = (
-      <Section>
-        <Title isSize={3}>
+      <Section className="text-block">
+        <Title isSize={5}>
           Promoting financial wellness tools that help you
         </Title>
         <Title isSize={1} className="heroTitle">
           live more
         </Title>
-        <Title isSize={1}>&</Title>
-        <Title isSize={1} className="heroTitle">
-          worry less!
+        <Title isSize={2} className="heroTitle">
+          & worry less
         </Title>
-        <br />
-        <Button isSize="large" isColor="success" onClick={showDashboard}>
+      </Section>
+    );
+
+    const actionBlock = (
+      <Section>
+        <Button isSize="large" isColor="primary" onClick={showDashboard}>
           Learn More
         </Button>
+        <p>(no payment required)</p>
+        <br />
+        <br />
+        {playerIcon}
+        {videoPlayer}
       </Section>
     );
 
@@ -92,7 +100,7 @@ class LandingPage extends Component {
       <Hero isSize="medium" isColor="white" isFullHeight>
         <HeroHeader>
           <NavBar />
-          <HeroBody>
+          <HeroBody className="has-navbar-fixed-top">
             <Container hasTextAlign="centered">
               <Columns>
                 <Column
@@ -106,9 +114,8 @@ class LandingPage extends Component {
                     desktop: 7
                   }}
                 >
-                  {playerIcon}
-                  {videoPlayer}
                   {textBlock}
+                  {actionBlock}
                 </Column>
               </Columns>
             </Container>
