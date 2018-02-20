@@ -5,6 +5,17 @@ body {
 .modal {
   z-index: 50 !important; }
 
+.navbar {
+  background-color: white !important;
+  border-bottom: solid 1px #7a7a7a; }
+  .navbar a.logo {
+    background-color: white; }
+  .navbar .navbar-item {
+    background-color: white; }
+
+.navbar-menu {
+  background-color: rgba(255, 255, 255, 0.6); }
+
 button {
   font-size: 1rem;
   font-weight: bold;
@@ -23,7 +34,3 @@ button {
 .navbar-item img {
   max-height: 4rem;
   margin: 0 auto; }
-
-.hero.is-white .navbar {
-  background: white;
-  border-bottom: solid 1px #7a7a7a; }

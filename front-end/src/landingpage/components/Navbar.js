@@ -29,7 +29,9 @@ class NavBar extends Component {
       <Navbar className="is-fixed-top">
         <NavbarBrand>
           <NavbarItem>
-            <img src={WelfieLogo} />
+            <a href="#" className="logo">
+              <img src={WelfieLogo} />
+            </a>
           </NavbarItem>
           <NavbarBurger isActive={isActive} onClick={this.toggleNav} />
         </NavbarBrand>
