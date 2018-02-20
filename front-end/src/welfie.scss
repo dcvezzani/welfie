@@ -10,3 +10,7 @@ html,
 body {
   font-family: "Muli", "Fira Sans", serif;
 }
+
+.modal {
+  z-index: 50 !important;
+}

@@ -2,6 +2,9 @@ html,
 body {
   font-family: "Muli", "Fira Sans", serif; }
 
+.modal {
+  z-index: 50 !important; }
+
 button {
   font-size: 1rem;
   font-weight: bold;

@@ -2,6 +2,9 @@ html,
 body {
   font-family: "Muli", "Fira Sans", serif; }
 
+.modal {
+  z-index: 50 !important; }
+
 .hero {
   background: linear-gradient(white, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("./welfie black and white flipped.jpg") no-repeat left center fixed;
   -webkit-background-size: cover;

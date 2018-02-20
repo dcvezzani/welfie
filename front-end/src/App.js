@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import LandingPage from "./landingpage/LandingPage";
+import DashboardHost from "./dashboard/DashboardHost";
 import { views } from "./constants";
 
 class App extends Component {
@@ -12,9 +13,12 @@ class App extends Component {
     });
   };
   render() {
+    const { activeView } = this.state;
+    const landingPage = <LandingPage showDashboard={this.showDashboard} />;
+    const dashboard = <DashboardHost />;
     return (
       <div className="App">
-        <LandingPage showDashboard={this.showDashboard} />
+        {activeView === views.DASHBOARD ? dashboard : landingPage}
       </div>
     );
   }
