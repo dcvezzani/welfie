@@ -86,7 +86,7 @@ class LandingPage extends Component {
     const actionBlock = (
       <Section>
         <Button isSize="large" isColor="primary" onClick={showDashboard}>
-          Learn More
+          Get Started
         </Button>
         <p>(no payment required)</p>
         <br />
