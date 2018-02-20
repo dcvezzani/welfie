@@ -6,6 +6,14 @@
     &.logo {
       background-color: white;
     }
+    &.button {
+      &.social {
+        padding: 0;
+        border: none;
+        font-size: 1.5rem;
+        color: $green !important;
+      }
+    }
   }
   .navbar-item {
     background-color: white;
@@ -25,15 +33,6 @@ button {
 .loginButton {
   background-color: $green;
   color: #fff;
-}
-
-.button {
-  &.social {
-    padding: 0;
-    border: none;
-    font-size: 1.5rem;
-    color: $green !important;
-  }
 }
 
 .navbar-item img {

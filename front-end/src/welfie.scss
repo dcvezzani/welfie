@@ -8,9 +8,13 @@ $green4: #c4f35f;
 $primary: $green;
 html,
 body {
-  font-family: "Muli", "Fira Sans", serif;
+    font-family: "Muli", "Fira Sans", serif;
 }
 
 .modal {
-  z-index: 50 !important;
+    z-index: 50 !important;
+}
+
+.has-navbar-fixed-top {
+    padding-top: 10vh;
 }

@@ -5,6 +5,9 @@ body {
 .modal {
   z-index: 50 !important; }
 
+.has-navbar-fixed-top {
+  padding-top: 10vh; }
+
 .hero {
   background: linear-gradient(white, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("./welfie black and white flipped.jpg") no-repeat left center fixed;
   -webkit-background-size: cover;

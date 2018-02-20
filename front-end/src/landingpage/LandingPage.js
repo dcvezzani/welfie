@@ -99,7 +99,6 @@ class LandingPage extends Component {
     return (
       <Hero isSize="medium" isColor="white" isFullHeight>
         <HeroHeader>
-          <NavBar />
           <HeroBody className="has-navbar-fixed-top">
             <Container hasTextAlign="centered">
               <Columns>

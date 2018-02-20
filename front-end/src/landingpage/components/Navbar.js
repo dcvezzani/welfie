@@ -25,11 +25,12 @@ class NavBar extends Component {
   };
   render() {
     const { isActive } = this.state;
+    const { showLandingPage } = this.props;
     return (
       <Navbar className="is-fixed-top">
         <NavbarBrand>
           <NavbarItem>
-            <a href="#" className="logo">
+            <a onClick={showLandingPage} className="logo">
               <img src={WelfieLogo} />
             </a>
           </NavbarItem>

@@ -3,11 +3,7 @@ import NavBar from "../landingpage/components/Navbar";
 
 class DashboardHost extends Component {
   render() {
-    return (
-      <div>
-        <NavBar />
-      </div>
-    );
+    return <div>Dashboard to come...</div>;
   }
 }
 

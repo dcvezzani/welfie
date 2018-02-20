@@ -4,3 +4,6 @@ body {
 
 .modal {
   z-index: 50 !important; }
+
+.has-navbar-fixed-top {
+  padding-top: 10vh; }
