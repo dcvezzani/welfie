@@ -1,74 +1,80 @@
 @import "../welfie.scss";
-.hero {
-    background: linear-gradient( rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("./welfie black and white flipped.jpg") no-repeat left center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    .hero-body {
-        img {
-            margin: 0 auto;
-        }
+.hero.is-white {
+  background: linear-gradient(
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    url("./welfie black and white flipped.jpg") no-repeat left center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  .hero-body {
+    img {
+      margin: 0 auto;
     }
-    @media screen and (min-width: 769px) {
-        &.is-medium {
-            .hero-body {
-                padding-top: 20vh;
-                padding-bottom: 5vh;
-            }
-        }
+  }
+  @media screen and (min-width: 769px) {
+    &.is-medium {
+      .hero-body {
+        padding-top: 20vh;
+        padding-bottom: 5vh;
+      }
     }
-    @media screen and (max-width: 1023px) {
-        &.is-white {
-            .navbar-menu {
-                background-color: rgba(255, 255, 255, 0.6);
-            }
-        }
+  }
+  @media screen and (max-width: 1023px) {
+    &.is-white {
+      .navbar-menu {
+        background-color: rgba(255, 255, 255, 0.6);
+      }
     }
+  }
 }
 
 .heroTitle {
-    text-transform: uppercase;
-    &.is-1 {
-        font-size: 4em !important;
-        color: $green !important;
-        text-shadow: 2px 2px $grey-darker;
-    }
+  text-transform: uppercase;
+  &.is-1 {
+    font-size: 4em !important;
+    color: $green !important;
+    text-shadow: 2px 2px $grey-darker;
+  }
 }
 
 .video-react-big-play-button {
-    display: none !important;
+  display: none !important;
 }
 
 .heroColumn {
-    background-color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(255, 255, 255, 0.65);
 }
 
 section {
-    h1.title.is-1 {
-        margin-bottom: 2rem !important;
-    }
-    .text-block {
-        padding-bottom: 4rem;
-    }
+  h1.title.is-1 {
+    margin-bottom: 2rem !important;
+  }
+  .text-block {
+    padding-bottom: 4rem;
+  }
 }
 
 .modal-card,
 .modal-content {
-    width: calc(100vh + 25vw);
+  width: calc(100vh + 25vw);
 }
 
 .play-button-container {
-    color: #000;
+  color: #000;
+  &:hover {
+    color: $green;
+  }
+  .play-button {
+    transition: width 0.5s, height 0.5s;
     &:hover {
-        color: $green;
+      width: 30%;
+      height: 30%;
     }
-    .play-button {
-        transition: width 0.5s, height 0.5s;
-        &:hover {
-            width: 30%;
-            height: 30%;
-        }
-    }
+  }
 }

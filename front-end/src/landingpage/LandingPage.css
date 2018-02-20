@@ -6,23 +6,23 @@ body {
   z-index: 50 !important; }
 
 .has-navbar-fixed-top {
-  padding-top: 10vh; }
+  padding-top: 15vh; }
 
-.hero {
+.hero.is-white {
   background: linear-gradient(white, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("./welfie black and white flipped.jpg") no-repeat left center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100%; }
-  .hero .hero-body img {
+  .hero.is-white .hero-body img {
     margin: 0 auto; }
   @media screen and (min-width: 769px) {
-    .hero.is-medium .hero-body {
+    .hero.is-white.is-medium .hero-body {
       padding-top: 20vh;
       padding-bottom: 5vh; } }
   @media screen and (max-width: 1023px) {
-    .hero.is-white .navbar-menu {
+    .hero.is-white.is-white .navbar-menu {
       background-color: rgba(255, 255, 255, 0.6); } }
 
 .heroTitle {

@@ -6,7 +6,8 @@ import NavBar from "./landingpage/components/Navbar";
 import "./welfie.css";
 class App extends Component {
   state = {
-    activeView: views.LANDING
+    // for now, setting this to dashboard
+    activeView: views.DASHBOARD
   };
   showDashboard = () => {
     this.setState({

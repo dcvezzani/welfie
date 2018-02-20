@@ -1,0 +1,21 @@
+html,
+body {
+  font-family: "Muli", "Fira Sans", serif; }
+
+.modal {
+  z-index: 50 !important; }
+
+.has-navbar-fixed-top {
+  padding-top: 15vh; }
+
+.ad-text {
+  text-transform: uppercase;
+  letter-spacing: 1rem; }
+
+.card .card-header p.card-header-title {
+  justify-content: center;
+  text-transform: uppercase;
+  color: #ffdd57;
+  font-weight: bold;
+  letter-spacing: 1rem;
+  font-size: 1.5rem; }
