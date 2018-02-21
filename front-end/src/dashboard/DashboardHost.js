@@ -15,6 +15,8 @@ import { content } from "../constants";
 import "./DashboardHost.css";
 import WelfieScore from "./components/WelfieScore";
 import SmartDollarCard from "./cards/SmartDollar";
+import WelfieBlog from "./cards/WelfieBlog";
+import WelfieScoreCard from "./cards/WelfieScoreCard";
 
 class DashboardHost extends Component {
   render() {
@@ -27,32 +29,8 @@ class DashboardHost extends Component {
         <Container className="card-container">
           <Columns>
             <SmartDollarCard />
-            <SingleColumnCard
-              title="Welfie&reg; Blog"
-              subtitleText="Useful stuff, not fluff"
-            >
-              <Box>{content}</Box>
-              <Section hasTextAlign="centered">
-                <Button isColor="primary" href="http://welfie.co/blog">
-                  View All Posts
-                </Button>
-              </Section>
-            </SingleColumnCard>
-            <SingleColumnCard title="Welfie&reg; Score">
-              <WelfieScore score={97} />
-              <Section hasTextAlign="centered">
-                <Columns>
-                  <Column isSize="1/2">
-                    <Button isColor="primary">Details</Button>
-                  </Column>
-                  <Column isSize="1/2">
-                    <Button isColor="primary" isOutlined>
-                      Update
-                    </Button>
-                  </Column>
-                </Columns>
-              </Section>
-            </SingleColumnCard>
+            <WelfieBlog />
+            <WelfieScoreCard />
           </Columns>
           <Columns>
             <SingleColumnCard title="Invest">{content}</SingleColumnCard>
