@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NavBar from "./components/Navbar";
+import { Link } from "react-router-dom";
 import {
   Title,
   Hero,
@@ -8,26 +8,18 @@ import {
   Container,
   Column,
   Columns,
-  Image,
   Button,
-  Delete,
   Section,
   Modal,
   ModalContent,
   ModalClose,
-  ModalBackground,
-  ModalCard,
-  ModalCardBody,
-  ModalCardHeader,
-  ModalCardFooter,
-  ModalCardTitle
+  ModalBackground
 } from "bloomer";
 import { Player, BigPlayButton } from "video-react";
 import FAIcon from "../common/FAIcon";
 
 import "./LandingPage.css";
 import "../../node_modules/video-react/dist/video-react.css";
-import WelfieLogo from "./logo.png";
 import WelfieMovie from "./welfie.mov";
 
 class LandingPage extends Component {
@@ -47,7 +39,7 @@ class LandingPage extends Component {
 
   render() {
     const { showDashboard } = this.props;
-    const { playIconHovered, videoIsPlaying } = this.state;
+    const { videoIsPlaying } = this.state;
     const playerIcon = (
       <div className="play-button-container" onClick={this.playVideo}>
         <FAIcon
@@ -85,8 +77,8 @@ class LandingPage extends Component {
 
     const actionBlock = (
       <Section>
-        <Button isSize="large" isColor="primary" onClick={showDashboard}>
-          Get Started
+        <Button isSize="large" isColor="primary">
+          <Link to="/dashboard">Get Started</Link>
         </Button>
         <p>(no payment required)</p>
         <br />

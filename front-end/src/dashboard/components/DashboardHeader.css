@@ -1,6 +1,11 @@
 html,
 body {
-  font-family: "Muli", "Fira Sans", serif; }
+  font-family: "Muli", "Fira Sans", sans-serif; }
+
+button,
+a.button {
+  font-family: "Roboto", "Muli", "Fira Sans", sans-serif;
+  font-weight: 700; }
 
 .modal {
   z-index: 50 !important; }
@@ -10,12 +15,17 @@ body {
 
 .ad-text {
   text-transform: uppercase;
-  letter-spacing: 1rem; }
+  letter-spacing: 0.5rem; }
 
-.card .card-header p.card-header-title {
-  justify-content: center;
-  text-transform: uppercase;
-  color: #ffdd57;
-  font-weight: bold;
-  letter-spacing: 1rem;
-  font-size: 1.5rem; }
+.card {
+  min-height: 440px; }
+  .card .card-header p.card-header-title {
+    justify-content: center;
+    text-transform: uppercase;
+    color: #ffdd57;
+    font-weight: bold;
+    letter-spacing: 0.75rem;
+    font-size: 1.5rem; }
+
+.extended-hero {
+  padding-bottom: 8rem; }

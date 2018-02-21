@@ -1,6 +1,11 @@
 html,
 body {
-  font-family: "Muli", "Fira Sans", serif; }
+  font-family: "Muli", "Fira Sans", sans-serif; }
+
+button,
+a.button {
+  font-family: "Roboto", "Muli", "Fira Sans", sans-serif;
+  font-weight: 700; }
 
 .modal {
   z-index: 50 !important; }

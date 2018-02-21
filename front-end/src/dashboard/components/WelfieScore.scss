@@ -1,0 +1,27 @@
+@import "../../welfie.scss";
+.outer-circle {
+  border-radius: 50%;
+  width: 225px;
+  height: 225px;
+  background-color: $green;
+  margin: 0 auto;
+}
+
+.inner-circle {
+  border-radius: 50%;
+  width: 205px;
+  height: 205px;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+}
+
+.welfie-score {
+  font-weight: 700;
+  font-size: 8rem;
+  position: relative;
+  margin: 0 auto;
+  top: 24px;
+  left: 38px;
+}

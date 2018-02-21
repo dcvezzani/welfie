@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import {
   Navbar,
@@ -25,14 +26,19 @@ class NavBar extends Component {
   };
   render() {
     const { isActive } = this.state;
-    const { showLandingPage } = this.props;
+    const { openConciergeModal } = this.props;
     return (
       <Navbar className="is-fixed-top">
         <NavbarBrand>
           <NavbarItem>
-            <a onClick={showLandingPage} className="logo">
+            <Link to="/" className="logo">
               <img src={WelfieLogo} />
-            </a>
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Button isColor="warning" onClick={openConciergeModal}>
+              Need Help? Ask our Concierge
+            </Button>
           </NavbarItem>
           <NavbarBurger isActive={isActive} onClick={this.toggleNav} />
         </NavbarBrand>
@@ -65,5 +71,7 @@ class NavBar extends Component {
   }
 }
 
-NavBar.propTypes = {};
+NavBar.propTypes = {
+  openConciergeModal: PropTypes.func.isRequired
+};
 export default NavBar;

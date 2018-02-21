@@ -1,0 +1,38 @@
+html,
+body {
+  font-family: "Muli", "Fira Sans", sans-serif; }
+
+button,
+a.button {
+  font-family: "Roboto", "Muli", "Fira Sans", sans-serif;
+  font-weight: 700; }
+
+.modal {
+  z-index: 50 !important; }
+
+.has-navbar-fixed-top {
+  padding-top: 75px; }
+
+.outer-circle {
+  border-radius: 50%;
+  width: 225px;
+  height: 225px;
+  background-color: #97c632;
+  margin: 0 auto; }
+
+.inner-circle {
+  border-radius: 50%;
+  width: 205px;
+  height: 205px;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+  top: 10px; }
+
+.welfie-score {
+  font-weight: 700;
+  font-size: 8rem;
+  position: relative;
+  margin: 0 auto;
+  top: 24px;
+  left: 38px; }
