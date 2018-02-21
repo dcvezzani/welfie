@@ -13,8 +13,8 @@ import {
 import { Player, BigPlayButton } from "video-react";
 import { content } from "../constants";
 import "./DashboardHost.css";
-import SmartDollarVideo from "./SmartDollarSmall.mp4";
 import WelfieScore from "./components/WelfieScore";
+import SmartDollarCard from "./cards/SmartDollar";
 
 class DashboardHost extends Component {
   render() {
@@ -26,30 +26,7 @@ class DashboardHost extends Component {
         />
         <Container className="card-container">
           <Columns>
-            <SingleColumnCard
-              title="Smartdollar&copy;"
-              subtitleText="Powered by Ramsey Solutions"
-            >
-              <Player
-                ref="smartDollar"
-                src={SmartDollarVideo}
-                poster="http://i.stack.imgur.com/PtbGQ.png"
-              >
-                <BigPlayButton />
-              </Player>
-              <Section hasTextAlign="centered">
-                <Columns>
-                  <Column isSize="1/2">
-                    <Button isColor="primary">Login & LEARN</Button>
-                  </Column>
-                  <Column isSize="1/2">
-                    <Button isColor="primary" isOutlined>
-                      Request Access
-                    </Button>
-                  </Column>
-                </Columns>
-              </Section>
-            </SingleColumnCard>
+            <SmartDollarCard />
             <SingleColumnCard
               title="Welfie&reg; Blog"
               subtitleText="Useful stuff, not fluff"
