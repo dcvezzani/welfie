@@ -23,7 +23,11 @@ class DashboardHeader extends Component {
                 <div className="ad-text">
                   A valuable benefit provided courtesy of
                 </div>
-                <img src={adImageSource} alt="Sponsor Logo" />
+                <img
+                  className="ad-image"
+                  src={adImageSource}
+                  alt="Sponsor Logo"
+                />
               </Column>
             </Columns>
           </Container>

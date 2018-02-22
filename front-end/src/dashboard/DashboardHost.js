@@ -14,7 +14,7 @@ class DashboardHost extends Component {
       <div>
         <DashboardHeader
           user="Dave"
-          adImageSource="http://www.fillmurray.com/g/200/150"
+          adImageSource="http://www.fillmurray.com/g/300/150"
         />
         <Container className="card-container">
           <Columns>

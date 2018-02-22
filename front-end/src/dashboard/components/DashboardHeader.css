@@ -16,19 +16,12 @@ a.button {
 button.button svg.icon {
   margin-right: 10px !important; }
 
+.ad-image {
+  padding-right: 8px; }
+
 .ad-text {
   text-transform: uppercase;
   letter-spacing: 0.5rem; }
-
-.card {
-  min-height: 440px; }
-  .card .card-header p.card-header-title {
-    justify-content: center;
-    text-transform: uppercase;
-    color: #ffdd57;
-    font-weight: bold;
-    letter-spacing: 0.75rem;
-    font-size: 1.5rem; }
 
 .extended-hero {
   padding-bottom: 8rem; }

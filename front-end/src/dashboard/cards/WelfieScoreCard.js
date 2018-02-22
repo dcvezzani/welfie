@@ -2,30 +2,32 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import WelfieScore from "../components/WelfieScore";
 import SingleColumnCard from "../components/SingleColumnCard";
-import { Section, Columns, Column, Button } from "bloomer";
+import { Button, CardFooter, CardFooterItem } from "bloomer";
 
 class WelfieScoreCard extends Component {
   render() {
+    const footer = (
+      <CardFooter>
+        <CardFooterItem>
+          <Button isColor="primary">Details</Button>
+        </CardFooterItem>
+        <CardFooterItem>
+          <Button isColor="primary" isOutlined>
+            Update
+          </Button>
+        </CardFooterItem>
+      </CardFooter>
+    );
     return (
-      <SingleColumnCard title="Welfie&reg; Score">
+      <SingleColumnCard title="Welfie&reg; Score" footerContent={footer}>
         <WelfieScore score={97} />
-        <Section hasTextAlign="centered">
-          <Columns>
-            <Column isSize="1/2">
-              <Button isColor="primary">Details</Button>
-            </Column>
-            <Column isSize="1/2">
-              <Button isColor="primary" isOutlined>
-                Update
-              </Button>
-            </Column>
-          </Columns>
-        </Section>
       </SingleColumnCard>
     );
   }
 }
 
-WelfieScoreCard.propTypes = {};
+WelfieScoreCard.propTypes = {
+  score: PropTypes.number.isRequired
+};
 
 export default WelfieScoreCard;

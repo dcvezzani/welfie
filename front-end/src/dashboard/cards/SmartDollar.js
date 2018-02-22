@@ -2,15 +2,28 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import SingleColumnCard from "../components/SingleColumnCard";
 import { Player, BigPlayButton } from "video-react";
-import { Section, Columns, Column, Button } from "bloomer";
+import { CardFooterItem, Button, CardFooter } from "bloomer";
 import SmartDollarVideo from "./SmartDollarSmall.mp4";
 
 class SmartDollar extends Component {
   render() {
+    const footerButtons = (
+      <CardFooter>
+        <CardFooterItem>
+          <Button isColor="primary">Login & LEARN</Button>
+        </CardFooterItem>
+        <CardFooterItem>
+          <Button isColor="primary" isOutlined>
+            Request Access
+          </Button>
+        </CardFooterItem>
+      </CardFooter>
+    );
     return (
       <SingleColumnCard
         title="Smartdollar&copy;"
         subtitleText="Powered by Ramsey Solutions"
+        footerContent={footerButtons}
       >
         <Player
           ref="smartDollar"
@@ -19,18 +32,6 @@ class SmartDollar extends Component {
         >
           <BigPlayButton />
         </Player>
-        <Section hasTextAlign="centered">
-          <Columns>
-            <Column isSize="1/2">
-              <Button isColor="primary">Login & LEARN</Button>
-            </Column>
-            <Column isSize="1/2">
-              <Button isColor="primary" isOutlined>
-                Request Access
-              </Button>
-            </Column>
-          </Columns>
-        </Section>
       </SingleColumnCard>
     );
   }

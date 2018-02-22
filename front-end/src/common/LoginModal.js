@@ -9,8 +9,7 @@ import {
   ModalCardFooter,
   ModalCardBody,
   Delete,
-  Button,
-  Control
+  Button
 } from "bloomer";
 import FormInput from "./FormInput";
 import FAIcon from "./FAIcon";
@@ -51,6 +50,9 @@ class LoginModal extends Component {
   }
 }
 
-LoginModal.propTypes = {};
+LoginModal.propTypes = {
+  isActive: PropTypes.bool.isRequired,
+  closeModal: PropTypes.func.isRequired
+};
 
 export default LoginModal;

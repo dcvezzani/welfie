@@ -1,5 +1,34 @@
+html,
+body {
+  font-family: "Muli", "Fira Sans", sans-serif; }
+
+button,
+a.button {
+  font-family: "Roboto", "Muli", "Fira Sans", sans-serif;
+  font-weight: 700; }
+
+.modal {
+  z-index: 50 !important; }
+
+.has-navbar-fixed-top {
+  padding-top: 75px; }
+
+button.button svg.icon {
+  margin-right: 10px !important; }
+
 .card-container {
   margin-top: -10rem; }
 
 .section {
   padding: 1.5rem !important; }
+
+.card .card-header p.card-header-title {
+  justify-content: center;
+  text-transform: uppercase;
+  color: #ffdd57;
+  font-weight: bold;
+  letter-spacing: 0.75rem;
+  font-size: 1.5rem; }
+
+.card .card-content {
+  min-height: 300px; }
