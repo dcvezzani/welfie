@@ -12,3 +12,6 @@ a.button {
 
 .has-navbar-fixed-top {
   padding-top: 75px; }
+
+button.button svg.icon {
+  margin-right: 10px !important; }

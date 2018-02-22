@@ -8,8 +8,6 @@ import {
   NavbarMenu,
   NavbarEnd,
   Button,
-  Title,
-  Icon,
   NavbarBurger,
   NavbarDivider
 } from "bloomer";
@@ -26,13 +24,13 @@ class NavBar extends Component {
   };
   render() {
     const { isActive } = this.state;
-    const { openConciergeModal } = this.props;
+    const { openConciergeModal, openLoginModal } = this.props;
     return (
       <Navbar className="is-fixed-top">
         <NavbarBrand>
           <NavbarItem>
             <Link to="/" className="logo">
-              <img src={WelfieLogo} />
+              <img src={WelfieLogo} alt="Welfie Logo" />
             </Link>
           </NavbarItem>
           <NavbarItem>
@@ -50,7 +48,7 @@ class NavBar extends Component {
               </Button>
             </NavbarItem>
             <NavbarItem>
-              <Button className="loginButton" href="#">
+              <Button className="loginButton" href="#" onClick={openLoginModal}>
                 Client Login
               </Button>
             </NavbarItem>

@@ -25,6 +25,10 @@ class DashboardCard extends Component {
   }
 }
 
-DashboardCard.propTypes = {};
+DashboardCard.propTypes = {
+  children: PropTypes.object,
+  title: PropTypes.string,
+  subtitleText: PropTypes.string
+};
 
 export default DashboardCard;

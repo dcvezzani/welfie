@@ -38,7 +38,6 @@ class LandingPage extends Component {
   };
 
   render() {
-    const { showDashboard } = this.props;
     const { videoIsPlaying } = this.state;
     const playerIcon = (
       <div className="play-button-container" onClick={this.playVideo}>

@@ -13,6 +13,9 @@ a.button {
 .has-navbar-fixed-top {
   padding-top: 75px; }
 
+button.button svg.icon {
+  margin-right: 10px !important; }
+
 .hero.is-white {
   background: linear-gradient(white, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("./welfie black and white flipped.jpg") no-repeat left center fixed;
   -webkit-background-size: cover;

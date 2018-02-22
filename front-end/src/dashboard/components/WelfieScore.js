@@ -16,6 +16,8 @@ class WelfieScore extends Component {
   }
 }
 
-WelfieScore.propTypes = {};
+WelfieScore.propTypes = {
+  score: PropTypes.number.isRequired
+};
 
 export default WelfieScore;

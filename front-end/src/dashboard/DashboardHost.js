@@ -1,19 +1,9 @@
 import React, { Component } from "react";
 import DashboardHeader from "./components/DashboardHeader";
 import SingleColumnCard from "./components/SingleColumnCard";
-import {
-  Container,
-  Columns,
-  Column,
-  Button,
-  Section,
-  Content,
-  Box
-} from "bloomer";
-import { Player, BigPlayButton } from "video-react";
+import { Container, Columns } from "bloomer";
 import { content } from "../constants";
 import "./DashboardHost.css";
-import WelfieScore from "./components/WelfieScore";
 import SmartDollarCard from "./cards/SmartDollar";
 import WelfieBlog from "./cards/WelfieBlog";
 import WelfieScoreCard from "./cards/WelfieScoreCard";
