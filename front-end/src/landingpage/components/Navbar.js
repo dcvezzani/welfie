@@ -48,7 +48,7 @@ class NavBar extends Component {
               </Button>
             </NavbarItem>
             <NavbarItem>
-              <Button className="loginButton" href="#" onClick={openLoginModal}>
+              <Button className="loginButton" onClick={openLoginModal}>
                 Client Login
               </Button>
             </NavbarItem>

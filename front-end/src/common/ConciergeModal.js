@@ -18,6 +18,7 @@ import {
   Column
 } from "bloomer";
 import FormInput from "./FormInput";
+import FAIcon from "./FAIcon";
 
 class ConciergeModal extends Component {
   render() {
@@ -60,8 +61,12 @@ class ConciergeModal extends Component {
             </Field>
           </ModalCardBody>
           <ModalCardFooter>
-            <Button isColor="success">Submit</Button>
-            <Button isColor="warning" onClick={closeModal}>
+            <Button isColor="success">
+              <FAIcon iconType="check" />
+              Submit
+            </Button>
+            <Button isColor="warning" isOutlined onClick={closeModal}>
+              <FAIcon iconType="ban" />
               Cancel
             </Button>
           </ModalCardFooter>

@@ -31,7 +31,7 @@ class LoginModal extends Component {
               ref="email"
               label="Email Address"
               type="email"
-              placeholder="The email address that you registered with"
+              placeholder="The email address that you registered with..."
             />
             <FormInput ref="password" label="Password" type="password" />
           </ModalCardBody>
