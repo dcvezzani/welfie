@@ -10,3 +10,6 @@ export const links = {
   WELFIE_VIMEO: "https://vimeo.com/256756826",
   SMART_DOLLAR_VIMEO: "https://vimeo.com/256756934"
 };
+
+export const thirdPartyText =
+  "Provided by 3rd party<br /> registered investment advisor<br /> at negotiated discounted rates.<br /> Separate agreement required.";
