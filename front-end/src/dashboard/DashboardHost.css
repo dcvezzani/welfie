@@ -35,5 +35,16 @@ button.button svg.icon {
 .card.card-short.blue-top {
   border-top: 5px solid #325d88; }
 
+.card.card-short.gold-top {
+  border-top: 5px solid #ffdd57; }
+
 .card.card-short .card-content {
   min-height: 200px; }
+
+.card.card-short button.gold {
+  border-color: #ddbb00;
+  color: white;
+  background-color: #ddbb00; }
+  .card.card-short button.gold.is-outlined {
+    color: #ddbb00;
+    background-color: white; }

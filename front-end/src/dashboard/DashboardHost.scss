@@ -25,8 +25,20 @@
     &.blue-top {
       border-top: 5px solid $primary;
     }
+    &.gold-top {
+      border-top: 5px solid $yellow;
+    }
     .card-content {
       min-height: 200px;
+    }
+    button.gold {
+      border-color: $gold;
+      color: white;
+      background-color: $gold;
+      &.is-outlined {
+        color: $gold;
+        background-color: white;
+      }
     }
   }
 }

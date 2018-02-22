@@ -11,31 +11,33 @@ import InvestCard from "./cards/Invest";
 import OrganizeCard from "./cards/Organize";
 import CoachingCard from "./cards/Coaching";
 import BasicsCard from "./cards/Basics";
+import PlanCard from './cards/Plan';
+
 class DashboardHost extends Component {
   render() {
     return (
       <div>
-        {" "}
         <DashboardHeader
           user="Dave"
           adImageSource="http://www.fillmurray.com/g/300/150"
-        />{" "}
+        />
         <Container className="card-container">
-          {" "}
           <Columns>
-            {" "}
-            <SmartDollarCard /> <WelfieBlog /> <WelfieScoreCard />{" "}
-          </Columns>{" "}
+            <SmartDollarCard />
+            <WelfieBlog />
+            <WelfieScoreCard />
+          </Columns>
           <Columns>
-            {" "}
-            <InvestCard /> <OrganizeCard /> <CoachingCard />{" "}
-          </Columns>{" "}
+            <InvestCard />
+            <OrganizeCard />
+            <CoachingCard />
+          </Columns>
           <Columns>
-            {" "}
-            <BasicsCard /> <SingleColumnCard title="Plan" />{" "}
-            <SingleColumnCard title="Advice/Support" />{" "}
-          </Columns>{" "}
-        </Container>{" "}
+            <BasicsCard />
+            <PlanCard />
+            <SingleColumnCard title="Advice/Support" />
+          </Columns>
+        </Container>
       </div>
     );
   }
