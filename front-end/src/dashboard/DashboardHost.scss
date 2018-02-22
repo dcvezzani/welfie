@@ -1,24 +1,29 @@
-@import '../welfie.scss';
+@import "../welfie.scss";
 .card-container {
-    margin-top: -10rem;
+  margin-top: -10rem;
 }
 
 .section {
-    padding: 1.5rem !important;
+  padding: 1.5rem !important;
 }
 
 .card {
-    .card-header {
-        p.card-header-title {
-            justify-content: center;
-            text-transform: uppercase;
-            color: $yellow;
-            font-weight: bold;
-            letter-spacing: 0.75rem;
-            font-size: 1.5rem;
-        }
+  .card-header {
+    p.card-header-title {
+      justify-content: center;
+      text-transform: uppercase;
+      color: $yellow;
+      font-weight: bold;
+      letter-spacing: 0.75rem;
+      font-size: 1.5rem;
     }
+  }
+  .card-content {
+    min-height: 300px;
+  }
+  &.card-short {
     .card-content {
-        min-height: 300px;
+      min-height: 200px;
     }
+  }
 }

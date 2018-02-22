@@ -9,6 +9,7 @@ import WelfieBlog from "./cards/WelfieBlog";
 import WelfieScoreCard from "./cards/WelfieScoreCard";
 import InvestCard from "./cards/Invest";
 import OrganizeCard from "./cards/Organize";
+import CoachingCard from "./cards/Coaching";
 
 class DashboardHost extends Component {
   render() {
@@ -27,7 +28,7 @@ class DashboardHost extends Component {
           <Columns>
             <InvestCard />
             <OrganizeCard />
-            <SingleColumnCard title="Coaching" />
+            <CoachingCard />
           </Columns>
           <Columns>
             <SingleColumnCard title="Get the Basics" />

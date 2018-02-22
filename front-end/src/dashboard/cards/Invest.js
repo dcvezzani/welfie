@@ -13,6 +13,7 @@ class InvestCard extends Component {
         <ReactTooltip multiline place="top" effect="solid" />
         <CardFooterItem>
           <Button isColor="primary" isOutlined data-tip={thirdPartyText}>
+            <FAIcon iconType="exclamation-triangle" />
             Get Prof. Help
           </Button>
         </CardFooterItem>
@@ -27,7 +28,11 @@ class InvestCard extends Component {
     const content =
       "Request the Portfolio Builder workbook with recommended allocations & money managers or have your portfolio professionally managed.";
     return (
-      <SingleColumnCard title="Invest" footerContent={footer}>
+      <SingleColumnCard
+        title="Invest"
+        footerContent={footer}
+        className="card-short"
+      >
         <Box>{content}</Box>
       </SingleColumnCard>
     );

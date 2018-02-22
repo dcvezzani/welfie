@@ -19,7 +19,11 @@ class OrganizeCard extends Component {
     const content =
       "Improved financial wellness begins with better organization";
     return (
-      <SingleColumnCard title="Organize" footerContent={footer}>
+      <SingleColumnCard
+        title="Organize"
+        footerContent={footer}
+        className="card-short"
+      >
         <Box>{content}</Box>
       </SingleColumnCard>
     );

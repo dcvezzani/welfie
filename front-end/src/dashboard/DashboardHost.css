@@ -32,3 +32,6 @@ button.button svg.icon {
 
 .card .card-content {
   min-height: 300px; }
+
+.card.card-short .card-content {
+  min-height: 200px; }

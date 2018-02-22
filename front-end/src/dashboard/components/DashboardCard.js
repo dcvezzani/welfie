@@ -4,7 +4,13 @@ import { Card, CardHeader, CardContent, CardHeaderTitle, Title } from "bloomer";
 
 class DashboardCard extends Component {
   render() {
-    const { title, subtitleText, children, footerContent } = this.props;
+    const {
+      title,
+      subtitleText,
+      children,
+      footerContent,
+      className
+    } = this.props;
     const subtitle = subtitleText !== "" && (
       <Title isSize={5} hasTextAlign="centered">
         {subtitleText}
@@ -12,7 +18,7 @@ class DashboardCard extends Component {
     );
 
     return (
-      <Card>
+      <Card className={className}>
         <CardHeader>
           <CardHeaderTitle hasTextAlign="centered">{title}</CardHeaderTitle>
         </CardHeader>
