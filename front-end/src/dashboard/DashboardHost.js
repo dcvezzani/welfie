@@ -7,6 +7,7 @@ import "./DashboardHost.css";
 import SmartDollarCard from "./cards/SmartDollar";
 import WelfieBlog from "./cards/WelfieBlog";
 import WelfieScoreCard from "./cards/WelfieScoreCard";
+import InvestCard from "./cards/Invest";
 
 class DashboardHost extends Component {
   render() {
@@ -23,7 +24,7 @@ class DashboardHost extends Component {
             <WelfieScoreCard />
           </Columns>
           <Columns>
-            <SingleColumnCard title="Invest">{content}</SingleColumnCard>
+            <InvestCard />
             <SingleColumnCard title="Organize" />
             <SingleColumnCard title="Coaching" />
           </Columns>
