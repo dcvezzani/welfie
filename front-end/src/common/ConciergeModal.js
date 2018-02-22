@@ -19,8 +19,18 @@ import {
 } from "bloomer";
 import FormInput from "./FormInput";
 import FAIcon from "./FAIcon";
+import Phone from "react-phone-number-input";
+
+import "react-phone-number-input/rrui.css";
+import "react-phone-number-input/style.css";
 
 class ConciergeModal extends Component {
+  state = {
+    name: "",
+    email: "",
+    phone: "",
+    message: ""
+  };
   render() {
     const { isActive, closeModal } = this.props;
     return (
@@ -46,11 +56,16 @@ class ConciergeModal extends Component {
                 />
               </Column>
               <Column isSize="1/3">
-                <FormInput
-                  label="Phone"
-                  type="tel"
-                  placeholder="(xxx) xxx-xxxx"
-                />
+                <Control>
+                  <Label>Phone</Label>
+                  <Phone
+                    placeholder="Enter phone number"
+                    value={this.state.phone}
+                    onChange={phone => this.setState({ phone })}
+                    country="US"
+                    countries={["US", "CA"]}
+                  />
+                </Control>
               </Column>
             </Columns>
             <Field>
