@@ -22,6 +22,9 @@
     min-height: 300px;
   }
   &.card-short {
+    &.blue-top {
+      border-top: 5px solid $primary;
+    }
     .card-content {
       min-height: 200px;
     }

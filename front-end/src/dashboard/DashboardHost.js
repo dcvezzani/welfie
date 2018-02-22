@@ -10,32 +10,32 @@ import WelfieScoreCard from "./cards/WelfieScoreCard";
 import InvestCard from "./cards/Invest";
 import OrganizeCard from "./cards/Organize";
 import CoachingCard from "./cards/Coaching";
-
+import BasicsCard from "./cards/Basics";
 class DashboardHost extends Component {
   render() {
     return (
       <div>
+        {" "}
         <DashboardHeader
           user="Dave"
           adImageSource="http://www.fillmurray.com/g/300/150"
-        />
+        />{" "}
         <Container className="card-container">
+          {" "}
           <Columns>
-            <SmartDollarCard />
-            <WelfieBlog />
-            <WelfieScoreCard />
-          </Columns>
+            {" "}
+            <SmartDollarCard /> <WelfieBlog /> <WelfieScoreCard />{" "}
+          </Columns>{" "}
           <Columns>
-            <InvestCard />
-            <OrganizeCard />
-            <CoachingCard />
-          </Columns>
+            {" "}
+            <InvestCard /> <OrganizeCard /> <CoachingCard />{" "}
+          </Columns>{" "}
           <Columns>
-            <SingleColumnCard title="Get the Basics" />
-            <SingleColumnCard title="Plan" />
-            <SingleColumnCard title="Advice/Support" />
-          </Columns>
-        </Container>
+            {" "}
+            <BasicsCard /> <SingleColumnCard title="Plan" />{" "}
+            <SingleColumnCard title="Advice/Support" />{" "}
+          </Columns>{" "}
+        </Container>{" "}
       </div>
     );
   }

@@ -3,6 +3,8 @@
   "plugins": ["react", "babel"],
   "rules": {
     "complexity": 0,
-    "no-unused-vars": 0
+    "no-unused-vars": 0,
+    "indent": ["warning", 4],
+    "react/jsx-indent-prop": [2, 4]
   }
 }
