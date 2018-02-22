@@ -1,44 +1,61 @@
 @import "../welfie.scss";
 .card-container {
-  margin-top: -10rem;
+    margin-top: -10rem;
 }
 
 .section {
-  padding: 1.5rem !important;
+    padding: 1.5rem !important;
 }
 
 .card {
-  .card-header {
-    p.card-header-title {
-      justify-content: center;
-      text-transform: uppercase;
-      color: $yellow;
-      font-weight: bold;
-      letter-spacing: 0.75rem;
-      font-size: 1.5rem;
-    }
-  }
-  .card-content {
-    min-height: 300px;
-  }
-  &.card-short {
-    &.blue-top {
-      border-top: 5px solid $primary;
-    }
-    &.gold-top {
-      border-top: 5px solid $yellow;
+    .card-header {
+        p.card-header-title {
+            justify-content: center;
+            text-transform: uppercase;
+            color: $yellow;
+            font-weight: bold;
+            letter-spacing: 0.75rem;
+            font-size: 1.5rem;
+        }
     }
     .card-content {
-      min-height: 200px;
+        min-height: 300px;
     }
-    button.gold {
-      border-color: $gold;
-      color: white;
-      background-color: $gold;
-      &.is-outlined {
-        color: $gold;
-        background-color: white;
-      }
+    &.card-short {
+        &.blue-top {
+            border-top: 5px solid $primary;
+        }
+        &.gold-top {
+            border-top: 5px solid $gold;
+        }
+        &.platinum-top {
+            border-top: 5px solid $platinum;
+        }
+        .card-content {
+            min-height: 200px;
+        }
+        button.gold {
+            border-color: $gold;
+            color: white;
+            background-color: $gold;
+            &.is-outlined {
+                color: $gold;
+                background-color: white;
+            }
+        }
+        button.platinum {
+            border-color: $platinum;
+            color: white;
+            background-color: $platinum;
+            &.is-outlined {
+                color: $platinum;
+                background-color: white;
+            }
+        }
     }
-  }
+    .tag {
+        &.gold {
+            background-color: $gold;
+        }
+    }
 }

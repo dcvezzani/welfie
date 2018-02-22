@@ -11,7 +11,8 @@ import InvestCard from "./cards/Invest";
 import OrganizeCard from "./cards/Organize";
 import CoachingCard from "./cards/Coaching";
 import BasicsCard from "./cards/Basics";
-import PlanCard from './cards/Plan';
+import PlanCard from "./cards/Plan";
+import AdviceSupportCard from "./cards/AdviceSupport";
 
 class DashboardHost extends Component {
   render() {
@@ -35,7 +36,7 @@ class DashboardHost extends Component {
           <Columns>
             <BasicsCard />
             <PlanCard />
-            <SingleColumnCard title="Advice/Support" />
+            <AdviceSupportCard />
           </Columns>
         </Container>
       </div>

@@ -36,7 +36,10 @@ button.button svg.icon {
   border-top: 5px solid #325d88; }
 
 .card.card-short.gold-top {
-  border-top: 5px solid #ffdd57; }
+  border-top: 5px solid #ddbb00; }
+
+.card.card-short.platinum-top {
+  border-top: 5px solid #889; }
 
 .card.card-short .card-content {
   min-height: 200px; }
@@ -48,3 +51,14 @@ button.button svg.icon {
   .card.card-short button.gold.is-outlined {
     color: #ddbb00;
     background-color: white; }
+
+.card.card-short button.platinum {
+  border-color: #889;
+  color: white;
+  background-color: #889; }
+  .card.card-short button.platinum.is-outlined {
+    color: #889;
+    background-color: white; }
+
+.card .tag.gold {
+  background-color: #ddbb00; }
