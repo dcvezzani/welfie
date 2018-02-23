@@ -16,7 +16,7 @@ button.button svg.icon {
   margin-right: 10px !important; }
 
 .hero.is-white {
-  background: url("./WelfieBG.jpg") no-repeat left center fixed;
+  background: url("../common/assets/WelfieBG.jpg") no-repeat left center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

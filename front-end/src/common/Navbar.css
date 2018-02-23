@@ -1,0 +1,45 @@
+body {
+  font-family: "Muli", "Fira Sans", sans-serif; }
+
+button,
+a.button {
+  font-family: "Roboto", "Muli", "Fira Sans", sans-serif;
+  font-weight: 700; }
+
+.modal {
+  z-index: 50 !important; }
+
+.has-navbar-fixed-top {
+  padding-top: 75px; }
+
+button.button svg.icon {
+  margin-right: 10px !important; }
+
+.navbar {
+  background-color: white !important;
+  border-bottom: solid 1px #7a7a7a; }
+  .navbar a.logo {
+    background-color: white; }
+  .navbar a.button.social {
+    padding: 0;
+    border: none;
+    font-size: 1.5rem;
+    color: #97c632 !important; }
+  .navbar .navbar-item {
+    background-color: white; }
+
+.navbar-menu {
+  background-color: rgba(255, 255, 255, 0.6); }
+
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.loginButton {
+  background-color: #97c632;
+  color: #fff; }
+
+.navbar-item img {
+  max-height: 4rem;
+  margin: 0 auto; }

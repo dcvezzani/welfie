@@ -26,7 +26,7 @@ class DashboardHost extends Component {
           <Columns>
             <SmartDollarCard />
             <WelfieBlog />
-            <WelfieScoreCard />
+            <WelfieScoreCard score={97} />
           </Columns>
           <Columns>
             <InvestCard />

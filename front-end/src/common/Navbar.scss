@@ -1,0 +1,41 @@
+@import "../../welfie.scss";
+.navbar {
+  background-color: white !important;
+  border-bottom: solid 1px $grey;
+  a {
+    &.logo {
+      background-color: white;
+    }
+    &.button {
+      &.social {
+        padding: 0;
+        border: none;
+        font-size: 1.5rem;
+        color: $green !important;
+      }
+    }
+  }
+  .navbar-item {
+    background-color: white;
+  }
+}
+
+.navbar-menu {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.loginButton {
+  background-color: $green;
+  color: #fff;
+}
+
+.navbar-item img {
+  max-height: 4rem;
+  margin: 0 auto;
+}

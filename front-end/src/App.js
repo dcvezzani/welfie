@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import LandingPage from "./landingpage/LandingPage";
 import DashboardHost from "./dashboard/DashboardHost";
-import NavBar from "./landingpage/components/Navbar";
+import NavBar from "./common/Navbar";
 import ConciergeModal from "./common/ConciergeModal";
 import LoginModal from "./common/LoginModal";
 import "./welfie.css";

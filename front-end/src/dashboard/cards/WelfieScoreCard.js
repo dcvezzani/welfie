@@ -6,6 +6,7 @@ import { Button, CardFooter, CardFooterItem } from "bloomer";
 
 class WelfieScoreCard extends Component {
   render() {
+    const { score } = this.props;
     const footer = (
       <CardFooter>
         <CardFooterItem>
@@ -20,7 +21,7 @@ class WelfieScoreCard extends Component {
     );
     return (
       <SingleColumnCard title="Welfie&reg; Score" footerContent={footer}>
-        <WelfieScore score={97} />
+        <WelfieScore score={score} />
       </SingleColumnCard>
     );
   }

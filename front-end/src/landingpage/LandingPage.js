@@ -20,7 +20,7 @@ import FAIcon from "../common/FAIcon";
 
 import "./LandingPage.css";
 import "../../node_modules/video-react/dist/video-react.css";
-import WelfieMovie from "./welfie.mov";
+import WelfieMovie from "../common/assets/welfie.mov";
 
 class LandingPage extends Component {
   state = {
