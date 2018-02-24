@@ -67,15 +67,17 @@ class NavBar extends Component {
               </Button>
             </NavbarItem>
             <NavbarDivider />
-            <SocialIcon
-              iconType="facebook"
-              link="https://facebook.com/welfie.co"
-            />
-            <SocialIcon iconType="twitter" link="https://twitter.com/welfie" />
-            <SocialIcon
-              iconType="linkedin"
-              link="https://linkedin.com/in/welfie"
-            />
+            <NavbarItem>
+              <SocialIcon
+                iconType="facebook"
+                link="https://facebook.com/welfie.co"
+              />
+              <SocialIcon iconType="twitter" link="https://twitter.com/welfie" />
+              <SocialIcon
+                iconType="linkedin"
+                link="https://linkedin.com/in/welfie"
+              />
+            </NavbarItem>
           </NavbarEnd>
         </NavbarMenu>
       </Navbar>

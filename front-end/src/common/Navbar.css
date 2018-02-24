@@ -25,3 +25,9 @@ button {
 .navbar-item img {
   max-height: 4rem;
   margin: 0 auto; }
+
+
+.button.social:not(:last-child) {
+  margin-right: 1em;
+}
+  
