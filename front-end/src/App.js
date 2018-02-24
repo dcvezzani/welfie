@@ -12,6 +12,12 @@ class App extends Component {
     loginModalIsActive: false
   };
 
+  componentWillUnmount() {
+    alert(
+      "You're leaving the welfie.co site now. The site you're going to are not under the control of Welfie and may require different terms and conditions."
+    );
+  }
+
   openConciergeModal = () => {
     this.setState({ conciergeModalIsActive: true });
   };

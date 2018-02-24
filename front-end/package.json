@@ -5,6 +5,7 @@
   "dependencies": {
     "bloomer": "^0.6.3",
     "bulma": "^0.6.2",
+    "bulma-extensions": "^1.0.3",
     "classnames": "^2.2.5",
     "eslint-plugin-import": "^2.8.0",
     "node-sass-chokidar": "^0.0.3",

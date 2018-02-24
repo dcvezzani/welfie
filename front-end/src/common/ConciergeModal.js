@@ -23,6 +23,7 @@ import Phone from "react-phone-number-input";
 
 import "react-phone-number-input/rrui.css";
 import "react-phone-number-input/style.css";
+import PhoneInput from "./PhoneInput";
 
 class ConciergeModal extends Component {
   state = {
@@ -31,8 +32,13 @@ class ConciergeModal extends Component {
     phone: "",
     message: ""
   };
+
+  phoneNumberChanged = phone => {
+    this.setState({ phone });
+  };
   render() {
     const { isActive, closeModal } = this.props;
+    const { phone } = this.state;
     return (
       <Modal isActive={isActive}>
         <ModalBackground />
@@ -56,16 +62,10 @@ class ConciergeModal extends Component {
                 />
               </Column>
               <Column isSize="1/3">
-                <Control>
-                  <Label>Phone</Label>
-                  <Phone
-                    placeholder="Enter phone number"
-                    value={this.state.phone}
-                    onChange={phone => this.setState({ phone })}
-                    country="US"
-                    countries={["US", "CA"]}
-                  />
-                </Control>
+                <PhoneInput
+                  phoneNumber={phone}
+                  phoneNumberChanged={this.phoneNumberChanged}
+                />
               </Column>
             </Columns>
             <Field>

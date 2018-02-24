@@ -9,11 +9,13 @@ import {
   NavbarEnd,
   Button,
   NavbarBurger,
-  NavbarDivider
+  NavbarDivider,
+  Content
 } from "bloomer";
 import "./Navbar.css";
 import SocialIcon from "./SocialIcon";
 import WelfieLogo from "./assets/logo.png";
+import FAIcon from "./FAIcon";
 class NavBar extends Component {
   state = {
     isActive: false
@@ -34,8 +36,21 @@ class NavBar extends Component {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Button isColor="warning" onClick={openConciergeModal}>
+            <Button
+              isColor="warning"
+              onClick={openConciergeModal}
+              isHidden="mobile"
+            >
+              <FAIcon iconType="question-circle" />
               Need Help? Ask our Concierge
+            </Button>
+            <Button
+              isColor="warning"
+              onClick={openConciergeModal}
+              isHidden={["tablet", "desktop", "widescreen"]}
+            >
+              <FAIcon iconType="question-circle" />
+              Need Help?
             </Button>
           </NavbarItem>
           <NavbarBurger isActive={isActive} onClick={this.toggleNav} />
