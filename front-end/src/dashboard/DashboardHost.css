@@ -12,8 +12,11 @@
   letter-spacing: 0.75rem;
   font-size: 1.5rem; }
 
+.card.card-short .card-content, 
 .card .card-content {
-  min-height: 350px; }
+  height: 375px; 
+  overflow: scroll;
+}
 
 .card.card-short.blue-top {
   border-top: 5px solid #325d88; }
@@ -23,9 +26,6 @@
 
 .card.card-short.platinum-top {
   border-top: 5px solid #889; }
-
-.card.card-short .card-content {
-  min-height: 350px; }
 
 .card.card-short button.gold {
   border-color: #ddbb00;
@@ -39,7 +39,8 @@
   border-color: #889;
   color: white;
   background-color: #889; }
-  .card.card-short button.platinum.is-outlined {
+
+.card.card-short button.platinum.is-outlined {
     color: #889;
     background-color: white; }
 
@@ -61,3 +62,87 @@
 .title-canvas.margin {
   width: 2em;
 }
+
+.action-button.short {
+  display: none;
+}
+
+@media (max-width: 1410px) {
+  .title-canvas.body p.card-header-title {
+    font-size: 1.4rem;
+    height: 80px;
+  }
+}
+
+@media (max-width: 1216px) {
+  .card-footer {
+    display: block;
+    height: 116px;
+  }
+
+  .card-footer-item:not(:last-child) {
+    border: none;
+    border-bottom: 1px solid #e6e1d7;
+  }
+
+  .action-button.full {
+    display: none;
+  }
+    
+  .action-button.short {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+    
+}
+
+
+@media (max-width: 768px) {
+  .title-canvas.body p.card-header-title {
+    font-size: 1.5rem;
+    height: auto;
+  }
+
+  /* .card-footer-item:not(:last-child) { */
+  /*   border: none; */
+  /*   border-right: 1px solid #e6e1d7; */
+  /* } */
+
+  /* .card-footer { */
+  /*   height: auto; */
+  /*   display: -webkit-box; */
+  /*   display: -ms-flexbox; */
+  /*   display: flex; */
+  /* } */
+
+  /* .action-button.full { */
+  /*   display: inherit; */
+  /* } */
+  /*  */
+  /* .action-button.short { */
+  /*   display: none; */
+  /* } */
+
+  .title-canvas.body p.card-header-title {
+    font-size: 1.5rem;
+    height: auto;
+  }
+
+  .card.card-short, 
+  .card {
+    margin: 1em 2em 0em 2em;
+  }
+
+  .card.card-short .card-content, 
+  .card .card-content {
+    height: auto;
+  }
+
+  .card-footer {
+    display: block;
+    height: auto;
+  }
+  
+}
+
