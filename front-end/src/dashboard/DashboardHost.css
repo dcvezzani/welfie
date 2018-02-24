@@ -13,7 +13,7 @@
   font-size: 1.5rem; }
 
 .card .card-content {
-  min-height: 300px; }
+  min-height: 350px; }
 
 .card.card-short.blue-top {
   border-top: 5px solid #325d88; }
@@ -25,7 +25,7 @@
   border-top: 5px solid #889; }
 
 .card.card-short .card-content {
-  min-height: 200px; }
+  min-height: 350px; }
 
 .card.card-short button.gold {
   border-color: #ddbb00;
@@ -45,3 +45,9 @@
 
 .card .tag.gold {
   background-color: #ddbb00; }
+
+.dashboard-background {
+  background-color: #efefef;
+  padding-bottom: 6em;
+}
+
