@@ -6,6 +6,7 @@
     "bloomer": "^0.6.3",
     "bulma": "^0.6.2",
     "bulma-extensions": "^1.0.3",
+    "bulmaswatch": "^0.6.1",
     "classnames": "^2.2.5",
     "eslint-plugin-import": "^2.8.0",
     "node-sass-chokidar": "^0.0.3",
@@ -26,7 +27,7 @@
     "build": "npm-run-all -p build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "build-css": "node-sass-chokidar src/ -o src/",
+    "build-css": "node-sass-chokidar --error-bell src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
   },
   "devDependencies": {

@@ -1,14 +1,5 @@
-@import bulma;
 @import "../node_modules/bulma/sass/utilities/initial-variables.sass";
-@import "../node_modules/bulma/sass/utilities/functions.sass";
-$green: #97c632;
-$green1: #6a9905;
-$green2: #88b723;
-$green3: #a6d541;
-$green4: #c4f35f;
-$primary: #325d88;
-$gold: #ddbb00;
-$platinum: #889;
+@import "./_variables";
 body {
     font-family: "Muli", "Fira Sans", sans-serif;
 }

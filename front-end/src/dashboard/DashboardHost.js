@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import DashboardHeader from "./components/DashboardHeader";
 import SingleColumnCard from "./components/SingleColumnCard";
 import { Container, Columns } from "bloomer";
-import { content } from "../constants";
-import "./DashboardHost.css";
 import SmartDollarCard from "./cards/SmartDollar";
 import WelfieBlog from "./cards/WelfieBlog";
 import WelfieScoreCard from "./cards/WelfieScoreCard";
@@ -13,6 +11,8 @@ import CoachingCard from "./cards/Coaching";
 import BasicsCard from "./cards/Basics";
 import PlanCard from "./cards/Plan";
 import AdviceSupportCard from "./cards/AdviceSupport";
+
+import "./DashboardHost.css";
 
 class DashboardHost extends Component {
   render() {

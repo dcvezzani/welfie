@@ -1,20 +1,3 @@
-body {
-  font-family: "Muli", "Fira Sans", sans-serif; }
-
-button,
-a.button {
-  font-family: "Roboto", "Muli", "Fira Sans", sans-serif;
-  font-weight: 700; }
-
-.modal {
-  z-index: 50 !important; }
-
-.has-navbar-fixed-top {
-  padding-top: 75px; }
-
-button.button svg.icon {
-  margin-right: 10px !important; }
-
 .card-container {
   margin-top: -10rem; }
 

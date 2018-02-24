@@ -9,8 +9,7 @@ import {
   NavbarEnd,
   Button,
   NavbarBurger,
-  NavbarDivider,
-  Content
+  NavbarDivider
 } from "bloomer";
 import "./Navbar.css";
 import SocialIcon from "./SocialIcon";

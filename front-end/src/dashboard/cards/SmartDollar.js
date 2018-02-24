@@ -2,30 +2,9 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import SingleColumnCard from "../components/SingleColumnCard";
 import { Player, BigPlayButton } from "video-react";
-import {
-  CardFooterItem,
-  Button,
-  CardFooter,
-  Modal,
-  ModalBackground,
-  ModalCard,
-  ModalCardBody,
-  ModalCardFooter,
-  ModalCardHeader,
-  ModalCardTitle,
-  Delete,
-  Columns,
-  Column,
-  Label,
-  Control,
-  Checkbox,
-  Field
-} from "bloomer";
+import { CardFooterItem, Button, CardFooter } from "bloomer";
 import SmartDollarVideo from "../../common/assets/SmartDollar.mp4";
-import FormInput from "../../common/FormInput";
-import PhoneInput from "../../common/PhoneInput";
-import classNames from "classnames";
-import FAIcon from "../../common/FAIcon";
+import SmartDollarModal from "./children/SmartDollarModal";
 
 class SmartDollar extends Component {
   state = {
@@ -44,63 +23,12 @@ class SmartDollar extends Component {
     this.setState({ modalIsActive: false });
   };
 
-  phoneNumberChanged = phone => {
-    this.setState({ phone });
+  handleSubmit = formValues => {
+    this.setState({ formValues });
   };
 
-  acceptTermsChanged = () => {
-    this.setState({ acceptTerms: !this.state.acceptTerms });
-  };
   render() {
-    const { modalIsActive, name, email, phone, acceptTerms } = this.state;
-    const formModal = (
-      <Modal isActive={modalIsActive}>
-        <ModalBackground />
-        <ModalCard>
-          <ModalCardHeader>
-            <ModalCardTitle>Request access to SmartDollar&copy;</ModalCardTitle>
-            <Delete onClick={this.closeModal} />
-          </ModalCardHeader>
-          <ModalCardBody>
-            <Columns>
-              <Column isSize="1/3">
-                <FormInput label="Name" placeholder="Your Name" />
-              </Column>
-              <Column isSize="1/3">
-                <FormInput
-                  label="Email"
-                  type="email"
-                  placeholder="Your email address"
-                />
-              </Column>
-              <Column isSize="1/3">
-                <PhoneInput
-                  phoneNumber={phone}
-                  phoneNumberChanged={this.phoneNumberChanged}
-                />
-              </Column>
-            </Columns>
-            <Field>
-              <Control>
-                <Checkbox onChange={this.acceptTermsChanged}>
-                  I accept the terms and conditions.
-                </Checkbox>
-              </Control>
-            </Field>
-          </ModalCardBody>
-          <ModalCardFooter>
-            <Button isColor="success">
-              <FAIcon iconType="check" />
-              Submit
-            </Button>
-            <Button isColor="warning" isOutlined onClick={this.closeModal}>
-              <FAIcon iconType="ban" />
-              Cancel
-            </Button>
-          </ModalCardFooter>
-        </ModalCard>
-      </Modal>
-    );
+    const { modalIsActive } = this.state;
     const footerButtons = (
       <CardFooter>
         <CardFooterItem>
@@ -124,7 +52,11 @@ class SmartDollar extends Component {
         subtitleText="Powered by Ramsey Solutions"
         footerContent={footerButtons}
       >
-        {formModal}
+        <SmartDollarModal
+          modalIsActive={modalIsActive}
+          closeModal={this.closeModal}
+          onSubmit={this.handleSubmit}
+        />
         <Player
           ref="SmartDollarPlayer"
           src="https://welfie.co/videos/smart-dollar-participant.WebM"

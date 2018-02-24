@@ -9,65 +9,65 @@ import {
   Delete,
   ModalCardBody,
   ModalCardFooter,
-  Button,
-  Field,
-  Label,
-  Control,
-  TextArea,
   Columns,
-  Column
+  Column,
+  Field,
+  Control,
+  Checkbox,
+  Button
 } from "bloomer";
-import FormInput from "./FormInput";
-import FAIcon from "./FAIcon";
-import PhoneInput from "./PhoneInput";
+import FormInput from "../../../common/FormInput";
+import PhoneInput from "../../../common/PhoneInput";
+import FAIcon from "../../../common/FAIcon";
 
-class ConciergeModal extends Component {
+class SmartDollarModal extends Component {
   state = {
     name: "",
     email: "",
     phone: "",
-    message: ""
-  };
-
-  phoneNumberChanged = phone => {
-    this.setState({ phone });
+    acceptTerms: false
   };
   render() {
-    const { isActive, closeModal } = this.props;
-    const { phone } = this.state;
+    const { modalIsActive, closeModal } = this.props;
+    const { name, email, emailIsValid, phone, acceptTerms } = this.state;
     return (
-      <Modal isActive={isActive}>
+      <Modal isActive={modalIsActive}>
         <ModalBackground />
         <ModalCard>
           <ModalCardHeader>
-            <ModalCardTitle>
-              Get Help from our Financial Wellness Concierge
-            </ModalCardTitle>
+            <ModalCardTitle>Request access to SmartDollar&copy;</ModalCardTitle>
             <Delete onClick={closeModal} />
           </ModalCardHeader>
           <ModalCardBody>
             <Columns>
               <Column isSize="1/3">
-                <FormInput label="Name" placeholder="Your Name" />
+                <FormInput label="Name" placeholder="Your Name" value={name} />
               </Column>
               <Column isSize="1/3">
                 <FormInput
                   label="Email"
                   type="email"
                   placeholder="Your email address"
+                  value={email}
+                  isValid={emailIsValid}
                 />
               </Column>
               <Column isSize="1/3">
                 <PhoneInput
+                  value={phone}
                   phoneNumber={phone}
                   phoneNumberChanged={this.phoneNumberChanged}
                 />
               </Column>
             </Columns>
             <Field>
-              <Label>Message</Label>
               <Control>
-                <TextArea placeholder="Enter your message to the concierge here..." />
+                <Checkbox
+                  value={acceptTerms}
+                  onChange={this.acceptTermsChanged}
+                >
+                  I accept the terms and conditions.
+                </Checkbox>
               </Control>
             </Field>
           </ModalCardBody>
@@ -87,9 +87,6 @@ class ConciergeModal extends Component {
   }
 }
 
-ConciergeModal.propTypes = {
-  isActive: PropTypes.bool.isRequired,
-  closeModal: PropTypes.func.isRequired
-};
+SmartDollarModal.propTypes = {};
 
-export default ConciergeModal;
+export default SmartDollarModal;
