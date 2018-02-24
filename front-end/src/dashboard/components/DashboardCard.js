@@ -20,7 +20,11 @@ class DashboardCard extends Component {
     return (
       <Card className={className}>
         <CardHeader>
-          <CardHeaderTitle hasTextAlign="centered">{title}</CardHeaderTitle>
+          <div class="title-canvas margin"></div>
+          <div class="title-canvas body">
+            <CardHeaderTitle hasTextAlign="centered">{title}</CardHeaderTitle>
+          </div>
+          <div class="title-canvas margin"></div>
         </CardHeader>
         <CardContent>
           {subtitle}

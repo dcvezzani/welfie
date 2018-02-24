@@ -40,7 +40,7 @@ class AdviceSupportCard extends Component {
     );
     return (
       <SingleColumnCard
-        title="Advice/Support"
+        title="Advice / Support"
         className="card-short platinum-top"
         subtitleText="From $299/year"
         footerContent={footer}

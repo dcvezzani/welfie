@@ -51,3 +51,13 @@
   padding-bottom: 6em;
 }
 
+.title-canvas {
+  display: inline-block;
+}
+.title-canvas.body {
+  margin: 1em auto;
+  overflow: auto;
+}
+.title-canvas.margin {
+  width: 2em;
+}
