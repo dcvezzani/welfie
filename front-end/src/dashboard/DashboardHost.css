@@ -104,6 +104,12 @@
     height: auto;
   }
 
+  /* On desktop, these revert back to the original behavior */
+  /* But there's a problem with mobile devices; TODO: perhaps have a separate style for mobile and desktop? */
+  /* For now, keep uniform and leave buttons stacked */
+  /* - buttons left to right */
+  /* - organize download button, full description */
+
   /* .card-footer-item:not(:last-child) { */
   /*   border: none; */
   /*   border-right: 1px solid #e6e1d7; */
