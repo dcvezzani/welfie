@@ -12,11 +12,8 @@
   letter-spacing: 0.75rem;
   font-size: 1.5rem; }
 
-.card.card-short .card-content, 
 .card .card-content {
-  height: 375px; 
-  overflow: scroll;
-}
+  min-height: 300px; }
 
 .card.card-short.blue-top {
   border-top: 5px solid #325d88; }
@@ -26,6 +23,9 @@
 
 .card.card-short.platinum-top {
   border-top: 5px solid #889; }
+
+.card.card-short .card-content {
+  min-height: 200px; }
 
 .card.card-short button.gold {
   border-color: #ddbb00;
@@ -39,89 +39,74 @@
   border-color: #889;
   color: white;
   background-color: #889; }
-
-.card.card-short button.platinum.is-outlined {
+  .card.card-short button.platinum.is-outlined {
     color: #889;
     background-color: white; }
 
 .card .tag.gold {
   background-color: #ddbb00; }
 
+.card.card-short .card-content,
+.card .card-content {
+  height: 375px;
+  overflow: scroll;
+  min-height: 0; }
+
 .dashboard-background {
   background-color: #efefef;
-  padding-bottom: 6em;
-}
+  padding-bottom: 6em; }
 
 .title-canvas {
-  display: inline-block;
-}
+  display: inline-block; }
+
 .title-canvas.body {
   margin: 1em auto;
-  overflow: auto;
-}
+  overflow: auto; }
+
 .title-canvas.margin {
-  width: 2em;
-}
+  width: 2em; }
 
 .action-button.short {
-  display: none;
-}
+  display: none; }
 
 @media (max-width: 1410px) {
   .title-canvas.body p.card-header-title {
     font-size: 1.4rem;
-    height: 80px;
-  }
-}
+    height: 80px; } }
 
 @media (max-width: 1216px) {
   .card-footer {
     display: block;
-    height: 116px;
-  }
-
+    height: 116px; }
   .card-footer-item:not(:last-child) {
     border: none;
-    border-bottom: 1px solid #e6e1d7;
-  }
-
+    border-bottom: 1px solid #e6e1d7; }
   .action-button.full {
-    display: none;
-  }
-    
+    display: none; }
   .action-button.short {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-  }
-    
-}
-
+    display: flex; } }
 
 @media (max-width: 768px) {
   .title-canvas.body p.card-header-title {
     font-size: 1.5rem;
-    height: auto;
-  }
-
+    height: auto; }
   /* On desktop, these revert back to the original behavior */
   /* But there's a problem with mobile devices; TODO: perhaps have a separate style for mobile and desktop? */
   /* For now, keep uniform and leave buttons stacked */
   /* - buttons left to right */
   /* - organize download button, full description */
-
   /* .card-footer-item:not(:last-child) { */
   /*   border: none; */
   /*   border-right: 1px solid #e6e1d7; */
   /* } */
-
   /* .card-footer { */
   /*   height: auto; */
   /*   display: -webkit-box; */
   /*   display: -ms-flexbox; */
   /*   display: flex; */
   /* } */
-
   /* .action-button.full { */
   /*   display: inherit; */
   /* } */
@@ -129,26 +114,15 @@
   /* .action-button.short { */
   /*   display: none; */
   /* } */
-
   .title-canvas.body p.card-header-title {
     font-size: 1.5rem;
-    height: auto;
-  }
-
-  .card.card-short, 
+    height: auto; }
+  .card.card-short,
   .card {
-    margin: 1em 2em 0em 2em;
-  }
-
-  .card.card-short .card-content, 
+    margin: 1em 2em 0em 2em; }
+  .card.card-short .card-content,
   .card .card-content {
-    height: auto;
-  }
-
+    height: auto; }
   .card-footer {
     display: block;
-    height: auto;
-  }
-  
-}
-
+    height: auto; } }
