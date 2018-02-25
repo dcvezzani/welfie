@@ -6,11 +6,9 @@ class SocialIcon extends Component {
   render() {
     const { iconType, link } = this.props;
     return (
-      <NavbarItem>
         <Button href={link} className="social" target="_blank">
           <Icon isSize="medium" className={`fab fa-${iconType}`} />
         </Button>
-      </NavbarItem>
     );
   }
 }

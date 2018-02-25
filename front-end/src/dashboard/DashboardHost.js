@@ -17,7 +17,7 @@ import "./DashboardHost.css";
 class DashboardHost extends Component {
   render() {
     return (
-      <div>
+      <div class="dashboard-background">
         <DashboardHeader
           user="Dave"
           adImageSource="http://www.fillmurray.com/g/300/150"

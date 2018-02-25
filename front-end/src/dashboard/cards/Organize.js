@@ -9,10 +9,20 @@ class OrganizeCard extends Component {
     const footer = (
       <CardFooter>
         <CardFooterItem>
-          <Button isColor="primary">
-            <FAIcon iconType="download" />
-            Download Free PDF templates & kits
-          </Button>
+          <div class="action-button-group download">
+            <div class="action-button full">
+              <Button isColor="primary">
+                <FAIcon iconType="download" />
+                Download Free PDF templates & kits
+              </Button>
+            </div>
+            <div class="action-button short">
+              <Button isColor="primary">
+                <FAIcon iconType="download" />
+                Download
+              </Button>
+            </div>
+          </div>
         </CardFooterItem>
       </CardFooter>
     );

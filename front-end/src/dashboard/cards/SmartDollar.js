@@ -48,7 +48,7 @@ class SmartDollar extends Component {
     );
     return (
       <SingleColumnCard
-        title="Smartdollar&copy;"
+        title="Smart Dollar&copy;"
         subtitleText="Powered by Ramsey Solutions"
         footerContent={footerButtons}
       >
