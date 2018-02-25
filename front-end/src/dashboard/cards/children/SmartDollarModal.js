@@ -40,7 +40,7 @@ class SmartDollarModal extends Component {
                 <ModalCard>
                     <ModalCardHeader>
                         <ModalCardTitle>
-                            Request access to SmartDollar&copy;
+                            Request access to Smart Dollar&copy;
                         </ModalCardTitle>
                         <Delete onClick={closeModal} />
                     </ModalCardHeader>
