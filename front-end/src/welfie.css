@@ -8,6 +8,8 @@ a.button {
 
 .modal {
   z-index: 50 !important; }
+  .modal .modal-card .modal-card-head .modal-card-title {
+    flex-shrink: 1 !important; }
 
 .has-navbar-fixed-top {
   padding-top: 75px; }

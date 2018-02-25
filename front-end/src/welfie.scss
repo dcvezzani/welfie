@@ -12,6 +12,13 @@ a.button {
 
 .modal {
     z-index: 50 !important;
+    .modal-card {
+        .modal-card-head {
+            .modal-card-title {
+                flex-shrink: 1 !important;
+            }
+        }
+    }
 }
 
 .has-navbar-fixed-top {
