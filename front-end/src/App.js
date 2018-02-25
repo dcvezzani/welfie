@@ -7,58 +7,58 @@ import ConciergeModal from "./common/ConciergeModal";
 import LoginModal from "./common/LoginModal";
 import "./welfie.css";
 class App extends Component {
-  state = {
-    conciergeModalIsActive: false,
-    loginModalIsActive: false
-  };
+    state = {
+        conciergeModalIsActive: false,
+        loginModalIsActive: false
+    };
 
-  componentWillUnmount() {
-    // alert(
-    //   "You're leaving the welfie.co site now. The site you're going to are not under the control of Welfie and may require different terms and conditions."
-    // );
-  }
+    componentWillUnmount() {
+        // alert(
+        //   "You're leaving the welfie.co site now. The site you're going to are not under the control of Welfie and may require different terms and conditions."
+        // );
+    }
 
-  openConciergeModal = () => {
-    this.setState({ conciergeModalIsActive: true });
-  };
+    openConciergeModal = () => {
+        this.setState({ conciergeModalIsActive: true });
+    };
 
-  openLoginModal = () => {
-    this.setState({ loginModalIsActive: true });
-  };
+    openLoginModal = () => {
+        this.setState({ loginModalIsActive: true });
+    };
 
-  closeConciergeModal = () => {
-    this.setState({ conciergeModalIsActive: false });
-  };
+    closeConciergeModal = () => {
+        this.setState({ conciergeModalIsActive: false });
+    };
 
-  closeLoginModal = () => {
-    this.setState({ loginModalIsActive: false });
-  };
-  render() {
-    const { conciergeModalIsActive, loginModalIsActive } = this.state;
-    return (
-      <Router>
-        <div className="App">
-          <NavBar
-            openConciergeModal={this.openConciergeModal}
-            openLoginModal={this.openLoginModal}
-          />
-          <ConciergeModal
-            isActive={conciergeModalIsActive}
-            closeModal={this.closeConciergeModal}
-          />
-          <LoginModal
-            isActive={loginModalIsActive}
-            closeModal={this.closeLoginModal}
-          />
+    closeLoginModal = () => {
+        this.setState({ loginModalIsActive: false });
+    };
+    render() {
+        const { conciergeModalIsActive, loginModalIsActive } = this.state;
+        return (
+            <Router basename="/">
+                <div className="App">
+                    <NavBar
+                        openConciergeModal={this.openConciergeModal}
+                        openLoginModal={this.openLoginModal}
+                    />
+                    <ConciergeModal
+                        isActive={conciergeModalIsActive}
+                        closeModal={this.closeConciergeModal}
+                    />
+                    <LoginModal
+                        isActive={loginModalIsActive}
+                        closeModal={this.closeLoginModal}
+                    />
 
-          <div className="has-navbar-fixed-top">
-            <Route exact path="/" component={LandingPage} />
-            <Route path="/dashboard" component={DashboardHost} />
-          </div>
-        </div>
-      </Router>
-    );
-  }
+                    <div className="has-navbar-fixed-top">
+                        <Route exact path="/" component={LandingPage} />
+                        <Route path="/dashboard" component={DashboardHost} />
+                    </div>
+                </div>
+            </Router>
+        );
+    }
 }
 
 export default App;
