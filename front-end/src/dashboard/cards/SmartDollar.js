@@ -32,10 +32,7 @@ class SmartDollar extends Component {
     const footerButtons = (
       <CardFooter>
         <CardFooterItem>
-          <Button
-            isColor="primary"
-            href="https://smartdollar.id.ramseysolutions.net/sign-in?response_type=code&client_id=smartdollar&scope=profile%20openid&redirect_uri=https://www.smartdollar.com/app/session/access&state=eyJzdG9yZWRfbG9jYXRpb24iOiIvYXBwIn0=&code_challenge=L7bGZYCiWNgpcrHKMpBv0tzg1I4lmrjq8QE0yozVq8s&code_challenge_method=S256"
-          >
+          <Button isColor="primary" href="www.smartdollar.com/app/sign-in">
             Login & LEARN
           </Button>
         </CardFooterItem>
