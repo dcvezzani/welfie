@@ -11,37 +11,39 @@ import CoachingCard from "./cards/Coaching";
 import BasicsCard from "./cards/Basics";
 import PlanCard from "./cards/Plan";
 import AdviceSupportCard from "./cards/AdviceSupport";
+import ReactTooltip from "react-tooltip";
 
 import "./DashboardHost.css";
 
 class DashboardHost extends Component {
-  render() {
-    return (
-      <div class="dashboard-background">
-        <DashboardHeader
-          user="Dave"
-          adImageSource="http://www.fillmurray.com/g/300/150"
-        />
-        <Container className="card-container">
-          <Columns>
-            <SmartDollarCard />
-            <WelfieBlog />
-            <WelfieScoreCard score={97} />
-          </Columns>
-          <Columns>
-            <InvestCard />
-            <OrganizeCard />
-            <CoachingCard />
-          </Columns>
-          <Columns>
-            <BasicsCard />
-            <PlanCard />
-            <AdviceSupportCard />
-          </Columns>
-        </Container>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div class="dashboard-background">
+                <ReactTooltip multiline place="top" effect="solid" />
+                <DashboardHeader
+                    user="Dave"
+                    adImageSource="http://www.fillmurray.com/g/300/150"
+                />
+                <Container className="card-container">
+                    <Columns>
+                        <SmartDollarCard />
+                        <WelfieBlog />
+                        <WelfieScoreCard score={97} />
+                    </Columns>
+                    <Columns>
+                        <InvestCard />
+                        <OrganizeCard />
+                        <CoachingCard />
+                    </Columns>
+                    <Columns>
+                        <BasicsCard />
+                        <PlanCard />
+                        <AdviceSupportCard />
+                    </Columns>
+                </Container>
+            </div>
+        );
+    }
 }
 
 export default DashboardHost;

@@ -19,7 +19,7 @@
         }
     }
     .card-content {
-        min-height: 300px;
+        min-height: 375px;
     }
     &.card-short {
         &.blue-top {
@@ -32,7 +32,8 @@
             border-top: 5px solid $platinum;
         }
         .card-content {
-            min-height: 200px;
+            min-height: 250px;
+            overflow: auto;
         }
         button.gold {
             border-color: $gold;
@@ -60,114 +61,95 @@
     }
 }
 
-.card.card-short .card-content, 
-.card .card-content {
-  height: 375px; 
-  overflow: scroll;
-  min-height: 0;
-}
-
 .dashboard-background {
-  background-color: #efefef;
-  padding-bottom: 6em;
+    background-color: #efefef;
+    padding-bottom: 6em;
 }
 
 .title-canvas {
-  display: inline-block;
+    display: inline-block;
 }
+
 .title-canvas.body {
-  margin: 1em auto;
-  overflow: auto;
+    margin: 1em auto;
+    overflow: auto;
 }
+
 .title-canvas.margin {
-  width: 2em;
+    width: 2em;
 }
 
 .action-button.short {
-  display: none;
+    display: none;
 }
 
 @media (max-width: 1410px) {
-  .title-canvas.body p.card-header-title {
-    font-size: 1.4rem;
-    height: 80px;
-  }
+    .title-canvas.body p.card-header-title {
+        font-size: 1.4rem;
+        height: 80px;
+    }
 }
 
 @media (max-width: 1216px) {
-  .card-footer {
-    display: block;
-    height: 116px;
-  }
-
-  .card-footer-item:not(:last-child) {
-    border: none;
-    border-bottom: 1px solid #e6e1d7;
-  }
-
-  .action-button.full {
-    display: none;
-  }
-    
-  .action-button.short {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-    
+    .card-footer {
+        display: block;
+        height: 116px;
+    }
+    .card-footer-item:not(:last-child) {
+        border: none;
+        border-bottom: 1px solid #e6e1d7;
+    }
+    .action-button.full {
+        display: none;
+    }
+    .action-button.short {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
 }
 
-
 @media (max-width: 768px) {
-  .title-canvas.body p.card-header-title {
-    font-size: 1.5rem;
-    height: auto;
-  }
-
-  /* On desktop, these revert back to the original behavior */
-  /* But there's a problem with mobile devices; TODO: perhaps have a separate style for mobile and desktop? */
-  /* For now, keep uniform and leave buttons stacked */
-  /* - buttons left to right */
-  /* - organize download button, full description */
-
-  /* .card-footer-item:not(:last-child) { */
-  /*   border: none; */
-  /*   border-right: 1px solid #e6e1d7; */
-  /* } */
-
-  /* .card-footer { */
-  /*   height: auto; */
-  /*   display: -webkit-box; */
-  /*   display: -ms-flexbox; */
-  /*   display: flex; */
-  /* } */
-
-  /* .action-button.full { */
-  /*   display: inherit; */
-  /* } */
-  /*  */
-  /* .action-button.short { */
-  /*   display: none; */
-  /* } */
-
-  .title-canvas.body p.card-header-title {
-    font-size: 1.5rem;
-    height: auto;
-  }
-
-  .card.card-short, 
-  .card {
-    margin: 1em 2em 0em 2em;
-  }
-
-  .card.card-short .card-content, 
-  .card .card-content {
-    height: auto;
-  }
-
-  .card-footer {
-    display: block;
-    height: auto;
-  }
-  
+    .title-canvas.body p.card-header-title {
+        font-size: 1.5rem;
+        height: auto;
+    }
+    /* On desktop, these revert back to the original behavior */
+    /* But there's a problem with mobile devices; TODO: perhaps have a separate style for mobile and desktop? */
+    /* For now, keep uniform and leave buttons stacked */
+    /* - buttons left to right */
+    /* - organize download button, full description */
+    /* .card-footer-item:not(:last-child) { */
+    /*   border: none; */
+    /*   border-right: 1px solid #e6e1d7; */
+    /* } */
+    /* .card-footer { */
+    /*   height: auto; */
+    /*   display: -webkit-box; */
+    /*   display: -ms-flexbox; */
+    /*   display: flex; */
+    /* } */
+    /* .action-button.full { */
+    /*   display: inherit; */
+    /* } */
+    /*  */
+    /* .action-button.short { */
+    /*   display: none; */
+    /* } */
+    .title-canvas.body p.card-header-title {
+        font-size: 1.5rem;
+        height: auto;
+    }
+    .card.card-short,
+    .card {
+        margin: 1em 2em 0em 2em;
+    }
+    .card.card-short .card-content,
+    .card .card-content {
+        height: auto;
+    }
+    .card-footer {
+        display: block;
+        height: auto;
+    }
 }

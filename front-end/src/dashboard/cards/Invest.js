@@ -4,39 +4,39 @@ import SingleColumnCard from "../components/SingleColumnCard";
 import { Box, CardFooter, CardFooterItem, Button, Tag } from "bloomer";
 import ReactTooltip from "react-tooltip";
 import FAIcon from "../../common/FAIcon";
-import { thirdPartyText } from "../../constants";
+import DataTipButton from "../../common/DataTipButton";
 
 class InvestCard extends Component {
-  render() {
-    const footer = (
-      <CardFooter>
-        <ReactTooltip multiline place="top" effect="solid" />
-        <CardFooterItem>
-          <Button isColor="primary" isOutlined data-tip={thirdPartyText}>
-            <FAIcon iconType="exclamation-triangle" />
-            Get Prof. Help
-          </Button>
-        </CardFooterItem>
-        <CardFooterItem>
-          <Button isColor="primary">
-            <FAIcon iconType="external-link-alt" />
-            Go to 401(k)
-          </Button>
-        </CardFooterItem>
-      </CardFooter>
-    );
-    const content =
-      "Request the Portfolio Builder workbook with recommended allocations & money managers or have your portfolio professionally managed.";
-    return (
-      <SingleColumnCard
-        title="Invest"
-        footerContent={footer}
-        className="card-short"
-      >
-        <Box>{content}</Box>
-      </SingleColumnCard>
-    );
-  }
+    render() {
+        const footer = (
+            <CardFooter>
+                <CardFooterItem>
+                    <DataTipButton
+                        isColor="primary"
+                        isOutlined
+                        text="Get Prof. Help"
+                    />
+                </CardFooterItem>
+                <CardFooterItem>
+                    <Button isColor="primary">
+                        <FAIcon iconType="external-link-alt" />
+                        Go to 401(k)
+                    </Button>
+                </CardFooterItem>
+            </CardFooter>
+        );
+        const content =
+            "Request the Portfolio Builder workbook with recommended allocations & money managers or have your portfolio professionally managed.";
+        return (
+            <SingleColumnCard
+                title="Invest"
+                footerContent={footer}
+                className="card-short"
+            >
+                <Box>{content}</Box>
+            </SingleColumnCard>
+        );
+    }
 }
 
 InvestCard.propTypes = {};

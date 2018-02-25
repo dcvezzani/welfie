@@ -13,7 +13,7 @@
   font-size: 1.5rem; }
 
 .card .card-content {
-  min-height: 300px; }
+  min-height: 375px; }
 
 .card.card-short.blue-top {
   border-top: 5px solid #325d88; }
@@ -25,7 +25,8 @@
   border-top: 5px solid #889; }
 
 .card.card-short .card-content {
-  min-height: 200px; }
+  min-height: 250px;
+  overflow: auto; }
 
 .card.card-short button.gold {
   border-color: #ddbb00;
@@ -45,12 +46,6 @@
 
 .card .tag.gold {
   background-color: #ddbb00; }
-
-.card.card-short .card-content,
-.card .card-content {
-  height: 375px;
-  overflow: scroll;
-  min-height: 0; }
 
 .dashboard-background {
   background-color: #efefef;
