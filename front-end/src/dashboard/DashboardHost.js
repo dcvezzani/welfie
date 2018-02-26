@@ -18,7 +18,7 @@ import "./DashboardHost.css";
 class DashboardHost extends Component {
     render() {
         return (
-            <div class="dashboard-background">
+            <div className="dashboard-background">
                 <ReactTooltip multiline place="top" effect="solid" />
                 <DashboardHeader
                     user="Dave"
