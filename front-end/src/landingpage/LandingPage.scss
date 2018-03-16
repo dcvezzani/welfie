@@ -41,6 +41,10 @@
     display: none !important;
 }
 
+.heroCanvas {
+  border-radius: $rounded-corner; 
+}
+
 .heroColumn {
     background-color: rgba(255, 255, 255, 0.65);
 }

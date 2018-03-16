@@ -94,7 +94,7 @@ class LandingPage extends Component {
             <Container hasTextAlign="centered">
               <Columns>
                 <Column
-                  className="heroColumn"
+                  className="heroColumn heroCanvas"
                   isSize={{
                     tablet: 12,
                     desktop: 5

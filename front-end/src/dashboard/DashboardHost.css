@@ -4,48 +4,42 @@
 .section {
   padding: 1.5rem !important; }
 
-.card .card-header p.card-header-title {
-  justify-content: center;
-  text-transform: uppercase;
-  color: #ffdd57;
-  font-weight: bold;
-  letter-spacing: 0.75rem;
-  font-size: 1.5rem; }
-
-.card .card-content {
-  min-height: 375px; }
-
-.card.card-short.blue-top {
-  border-top: 5px solid #325d88; }
-
-.card.card-short.gold-top {
-  border-top: 5px solid #ddbb00; }
-
-.card.card-short.platinum-top {
-  border-top: 5px solid #889; }
-
-.card.card-short .card-content {
-  min-height: 250px;
-  overflow: auto; }
-
-.card.card-short button.gold {
-  border-color: #ddbb00;
-  color: white;
-  background-color: #ddbb00; }
-  .card.card-short button.gold.is-outlined {
-    color: #ddbb00;
-    background-color: white; }
-
-.card.card-short button.platinum {
-  border-color: #889;
-  color: white;
-  background-color: #889; }
-  .card.card-short button.platinum.is-outlined {
-    color: #889;
-    background-color: white; }
-
-.card .tag.gold {
-  background-color: #ddbb00; }
+.card {
+  border-radius: 4px; }
+  .card .card-header p.card-header-title {
+    justify-content: center;
+    text-transform: uppercase;
+    color: #ffdd57;
+    font-weight: bold;
+    letter-spacing: 0.75rem;
+    font-size: 1.5rem; }
+  .card .card-content {
+    min-height: 375px; }
+  .card.card-short.blue-top {
+    border-top: 5px solid #325d88; }
+  .card.card-short.gold-top {
+    border-top: 5px solid #ddbb00; }
+  .card.card-short.platinum-top {
+    border-top: 5px solid #889; }
+  .card.card-short .card-content {
+    min-height: 250px;
+    overflow: auto; }
+  .card.card-short button.gold {
+    border-color: #ddbb00;
+    color: white;
+    background-color: #ddbb00; }
+    .card.card-short button.gold.is-outlined {
+      color: #ddbb00;
+      background-color: white; }
+  .card.card-short button.platinum {
+    border-color: #889;
+    color: white;
+    background-color: #889; }
+    .card.card-short button.platinum.is-outlined {
+      color: #889;
+      background-color: white; }
+  .card .tag.gold {
+    background-color: #ddbb00; }
 
 .dashboard-background {
   background-color: #efefef;
@@ -75,13 +69,17 @@
     height: 116px; }
   .card-footer-item:not(:last-child) {
     border: none;
-    border-bottom: 1px solid #e6e1d7; }
+    /* border-bottom: 1px solid #e6e1d7; */ }
   .action-button.full {
     display: none; }
   .action-button.short {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
+
+.card {
+  /* box-shadow: 5px 6px 3px rgba(62,63,58,.1), 0 0 0 0px rgba(62,63,58,.1); */
+  box-shadow: 5px 6px 3px rgba(62, 63, 58, 0.1); }
 
 @media (max-width: 768px) {
   .title-canvas.body p.card-header-title {

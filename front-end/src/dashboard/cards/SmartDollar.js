@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import SingleColumnCard from "../components/SingleColumnCard";
 import { Player, BigPlayButton } from "video-react";
 import { CardFooterItem, Button, CardFooter } from "bloomer";
-import SmartDollarVideo from "../../common/assets/SmartDollar.mp4";
 import SmartDollarModal from "./children/SmartDollarModal";
 
 class SmartDollar extends Component {
@@ -66,7 +65,6 @@ class SmartDollar extends Component {
                     src="https://welfie.co/videos/smart-dollar-participant.WebM"
                     poster="http://i.stack.imgur.com/PtbGQ.png"
                 >
-                    <BigPlayButton />
                 </Player>
             </SingleColumnCard>
         );

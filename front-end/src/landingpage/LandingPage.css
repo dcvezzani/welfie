@@ -25,6 +25,9 @@
 .video-react-big-play-button {
   display: none !important; }
 
+.heroCanvas {
+  border-radius: 4px; }
+
 .heroColumn {
   background-color: rgba(255, 255, 255, 0.65); }
 

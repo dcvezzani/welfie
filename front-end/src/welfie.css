@@ -14,5 +14,16 @@ a.button {
 .has-navbar-fixed-top {
   padding-top: 75px; }
 
-button.button svg.icon {
-  margin-right: 10px !important; }
+button.button {
+  border-radius: 4px; }
+  button.button svg.icon {
+    margin-right: 10px !important; }
+
+a.button {
+  border-radius: 4px; }
+
+.card-footer {
+  border-top: 0; }
+
+.card-footer-item:not(:last-child) {
+  border-right: 0; }

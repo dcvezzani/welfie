@@ -1,5 +1,7 @@
-@import "../node_modules/bulma/sass/utilities/initial-variables.sass";
 @import "./_variables";
+
+$pink-invert: #fff;
+
 body {
     font-family: "Muli", "Fira Sans", sans-serif;
 }
@@ -29,4 +31,17 @@ button.button {
     svg.icon {
         margin-right: 10px !important;
     }
+    border-radius: $rounded-corner; 
+}
+
+a.button {
+  border-radius: $rounded-corner; 
+}
+
+.card-footer {
+  border-top: 0;
+}
+
+.card-footer-item:not(:last-child) {
+    border-right: 0;
 }

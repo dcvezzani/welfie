@@ -1,4 +1,5 @@
 @import "../node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "../node_modules/bulma/sass/utilities/functions.sass";
 @import "../node_modules/bulmaswatch/sandstone/_variables.scss";
 //welfie.co colorsyarn
 $green: #97c632;
@@ -15,3 +16,4 @@ $gold: #ddbb00;
 $gold-invert: #000;
 $platinum: #889;
 $platinum-invert: #000;
+$rounded-corner: 4px;
