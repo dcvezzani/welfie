@@ -45,3 +45,37 @@ a.button {
 .card-footer-item:not(:last-child) {
     border-right: 0;
 }
+
+.button.is-primary {
+  background-color: $primary-color;
+}
+
+.button.is-primary.is-outlined {
+    background-color: transparent;
+    border-color: $primary-color;
+    color: $primary-color;
+}
+
+.button.is-primary.is-hovered, .button.is-primary:hover, 
+.button.is-primary.is-outlined:hover, 
+.button.is-primary.is-outlined:focus, .button.is-primary.is-outlined:hover {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: white;
+}
+
+.button.is-warning {
+  background-color: $yellow-highlight;
+  color: #394a58;
+}
+
+.column {
+    padding: 20px;
+}
+
+@media screen and (min-width: 1216px) {
+  .container {
+    max-width: 1152px;
+    width: 1060px;
+  }
+}

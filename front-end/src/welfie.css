@@ -15,15 +15,42 @@ a.button {
   padding-top: 75px; }
 
 button.button {
-  border-radius: 4px; }
+  border-radius: 3px; }
   button.button svg.icon {
     margin-right: 10px !important; }
 
 a.button {
-  border-radius: 4px; }
+  border-radius: 3px; }
 
 .card-footer {
   border-top: 0; }
 
 .card-footer-item:not(:last-child) {
   border-right: 0; }
+
+.button.is-primary {
+  background-color: #1FB9C8; }
+
+.button.is-primary.is-outlined {
+  background-color: transparent;
+  border-color: #1FB9C8;
+  color: #1FB9C8; }
+
+.button.is-primary.is-hovered, .button.is-primary:hover,
+.button.is-primary.is-outlined:hover,
+.button.is-primary.is-outlined:focus, .button.is-primary.is-outlined:hover {
+  background-color: #1FB9C8;
+  border-color: #1FB9C8;
+  color: white; }
+
+.button.is-warning {
+  background-color: #fec92f;
+  color: #394a58; }
+
+.column {
+  padding: 20px; }
+
+@media screen and (min-width: 1216px) {
+  .container {
+    max-width: 1152px;
+    width: 1060px; } }
