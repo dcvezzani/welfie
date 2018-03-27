@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import DashboardHeader from "./components/DashboardHeader";
+import DashboardFooter from "./components/DashboardFooter";
 import SingleColumnCard from "./components/SingleColumnCard";
 import { Container, Columns } from "bloomer";
 import SmartDollarCard from "./cards/SmartDollar";
@@ -41,6 +42,7 @@ class DashboardHost extends Component {
                         <AdviceSupportCard />
                     </Columns>
                 </Container>
+                <DashboardFooter />
             </div>
         );
     }

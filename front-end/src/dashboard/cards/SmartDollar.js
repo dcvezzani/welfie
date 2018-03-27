@@ -63,7 +63,7 @@ class SmartDollar extends Component {
                 <Player
                     ref="SmartDollarPlayer"
                     src="https://welfie.co/videos/smart-dollar-participant.WebM"
-                    poster="http://i.stack.imgur.com/PtbGQ.png"
+                    poster="https://cl.ly/2S010k0E1N2g/smart-dollar-thumbnail.png"
                 >
                 </Player>
             </SingleColumnCard>

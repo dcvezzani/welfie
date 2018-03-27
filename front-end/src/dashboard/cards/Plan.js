@@ -18,8 +18,8 @@ class PlanCard extends Component {
                 <CardFooterItem>
                     <DataTipButton
                         className="gold"
-                        isColor="warning"
-                        text="Get PLFS Gold"
+                        isColor="platinum"
+                        text="Get Gold"
                     />
                 </CardFooterItem>
             </CardFooter>

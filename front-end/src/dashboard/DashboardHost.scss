@@ -1,6 +1,6 @@
 @import "../_variables";
 .card-container {
-    margin-top: -10rem;
+  margin-top: 2rem;
 }
 
 .section {
@@ -8,23 +8,22 @@
 }
 
 .card {
+    border-top: 5px solid #394a58;
     .card-header {
         p.card-header-title {
             justify-content: center;
             text-transform: uppercase;
-            color: $yellow;
+            color: $yellow-highlight;
             font-size: 1.2rem;
         }
-        background-color: #394a58;
-        border-top-left-radius: $rounded-corner; 
-        border-top-right-radius: $rounded-corner; 
+        background-color: $midnight-color;
     }
     .card-content {
         min-height: 316px;
     }
     &.card-short {
         &.blue-top {
-            border-top: 5px solid $primary;
+            border-top: 5px solid $primary-color;
         }
         &.gold-top {
             border-top: 5px solid $gold;
@@ -35,6 +34,14 @@
         .card-content {
             min-height: 250px;
             overflow: auto;
+        }
+        button {
+          width: 100%;
+          border-radius: 6px;
+        }
+        button.platinum:hover, 
+        button.gold:hover {
+          border: 2px solid #3A4A57;
         }
         button.gold {
             border-color: $gold;
@@ -58,6 +65,7 @@
     .tag {
         &.gold {
             background-color: $gold;
+            color: $midnight-color;
         }
     }
     border-radius: $rounded-corner; 
@@ -65,7 +73,6 @@
 
 .dashboard-background {
     background-color: #F2F3F5;
-    padding-bottom: 6em;
 }
 
 .title-canvas {

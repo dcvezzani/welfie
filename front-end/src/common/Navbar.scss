@@ -2,7 +2,7 @@
 @import "../../node_modules/bulmaswatch/sandstone/_variables.scss";
 .navbar {
     background-color: white !important;
-    border-bottom: solid 1px $grey;
+    box-shadow: 0 0.25em 0.375em rgba(0,0,0,0.1);
     a {
         &.logo {
             background-color: white;
@@ -32,6 +32,7 @@ button {
     &.loginButton {
         background-color: $green;
         color: #fff;
+        display: none; 
     }
 }
 
@@ -42,5 +43,20 @@ button {
 
 .button.social:not(:last-child) {
   margin-right: 1em;
+}
+
+#blog {
+    border-color: $green;
+    color: white;
+    background-color: $green;
+    &.is-outlined {
+        color: $green;
+        background-color: white;
+    }
+}
+
+#blog:hover {
+    border-color: $dark-green;
+    background-color: $dark-green;
 }
 

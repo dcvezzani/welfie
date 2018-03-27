@@ -1,6 +1,8 @@
 @import "../../_variables";
 .ad-image {
     padding-right: 8px;
+    width: 195px;
+    margin-top: 5px;
 }
 
 .ad-text {
@@ -9,5 +11,20 @@
 }
 
 .extended-hero {
-    padding-bottom: 8rem;
+}
+
+.hero-body {
+  padding: 0;
+}
+
+h1.title.nav-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 19px 0;
+}
+
+p.welcome {
+  font-size: 1.2em;
+    font-weight: bold;
+    padding: 25px 0;
 }

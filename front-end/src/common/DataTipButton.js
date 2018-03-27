@@ -17,7 +17,6 @@ class DataTipButton extends Component {
                 isDisplay="desktop"
                 isHidden="touch"
             >
-                <WarningIcon />
                 {text}
             </Button>
         );
@@ -31,7 +30,6 @@ class DataTipButton extends Component {
                 isDisplay="touch"
                 isHidden="desktop"
             >
-                <WarningIcon />
                 {text}
             </Button>
         );

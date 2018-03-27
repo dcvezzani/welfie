@@ -19,7 +19,7 @@ class AdviceSupportCard extends Component {
                     <DataTipButton
                         className="platinum"
                         isColor="light"
-                        text="Get PLFS Platinum"
+                        text="Get Platinum"
                     />
                 </CardFooterItem>
             </CardFooter>

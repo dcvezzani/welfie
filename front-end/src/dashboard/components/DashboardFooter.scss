@@ -1,0 +1,23 @@
+@import "../../_variables";
+.footer-hero {
+  margin-top: 3em;
+}
+
+.hero-body {
+  padding: 0;
+}
+
+.copyright {
+  width: 250px;
+  margin: 0 auto; 
+  text-align: center;
+}
+
+.copyright-title {
+  font-size: 18pt;
+}
+
+.footer-hero .hero-body .container .columns {
+  margin-top: 0; 
+  margin-bottom: 0; 
+}

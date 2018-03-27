@@ -1,51 +1,56 @@
 .card-container {
-  margin-top: -10rem; }
+  margin-top: 2rem; }
 
 .section {
   padding: 1.5rem !important; }
 
 .card {
+  border-top: 5px solid #394a58;
   border-radius: 3px; }
   .card .card-header {
-    background-color: #394a58;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
+    background-color: #394a58; }
     .card .card-header p.card-header-title {
       justify-content: center;
       text-transform: uppercase;
-      color: #ffdd57;
+      color: #fec92f;
       font-size: 1.2rem; }
   .card .card-content {
     min-height: 316px; }
   .card.card-short.blue-top {
-    border-top: 5px solid #325d88; }
+    border-top: 5px solid #1FB9C8; }
   .card.card-short.gold-top {
-    border-top: 5px solid #ddbb00; }
+    border-top: 5px solid #FDC842; }
   .card.card-short.platinum-top {
-    border-top: 5px solid #889; }
+    border-top: 5px solid #828283; }
   .card.card-short .card-content {
     min-height: 250px;
     overflow: auto; }
+  .card.card-short button {
+    width: 100%;
+    border-radius: 6px; }
+  .card.card-short button.platinum:hover,
+  .card.card-short button.gold:hover {
+    border: 2px solid #3A4A57; }
   .card.card-short button.gold {
-    border-color: #ddbb00;
+    border-color: #FDC842;
     color: white;
-    background-color: #ddbb00; }
+    background-color: #FDC842; }
     .card.card-short button.gold.is-outlined {
-      color: #ddbb00;
+      color: #FDC842;
       background-color: white; }
   .card.card-short button.platinum {
-    border-color: #889;
+    border-color: #828283;
     color: white;
-    background-color: #889; }
+    background-color: #828283; }
     .card.card-short button.platinum.is-outlined {
-      color: #889;
+      color: #828283;
       background-color: white; }
   .card .tag.gold {
-    background-color: #ddbb00; }
+    background-color: #FDC842;
+    color: #394a58; }
 
 .dashboard-background {
-  background-color: #F2F3F5;
-  padding-bottom: 6em; }
+  background-color: #F2F3F5; }
 
 .title-canvas {
   display: inline-block; }

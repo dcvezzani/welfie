@@ -13,16 +13,12 @@ class DashboardHeader extends Component {
           <Container>
             <Columns>
               <Column isSize={5}>
-                <Title isSize={2}>Hi {user}, welcome back!</Title>
-                <br />
-                <Title isSize={3}>
-                  How can we help you improve your financial wellness?
-                </Title>
+                <h1 class="title nav-title">Dashboard</h1>
               </Column>
-              <Column isSize={4} isOffset={3} hasTextAlign="right">
-                <div className="ad-text">
-                  A valuable benefit provided courtesy of
-                </div>
+              <Column isSize={5} hasTextAlign="right">
+                <p className="welcome">Welcome, {user}!</p>
+              </Column>
+              <Column isSize={2}>
                 <img
                   className="ad-image"
                   src={adImageSource}

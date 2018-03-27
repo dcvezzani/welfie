@@ -1,7 +1,6 @@
 .navbar {
   background-color: white !important;
-  box-shadow: 0 0.25em 0.375em rgba(0,0,0,0.1);
-}
+  box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.1); }
   .navbar a.logo {
     background-color: white; }
   .navbar a.button.social {
@@ -21,7 +20,8 @@ button {
   text-transform: uppercase; }
   button.loginButton {
     background-color: #93c54b;
-    color: #fff; }
+    color: #fff;
+    display: none; }
 
 .navbar-item img {
   max-height: 4rem;
@@ -29,3 +29,15 @@ button {
 
 .button.social:not(:last-child) {
   margin-right: 1em; }
+
+#blog {
+  border-color: #93c54b;
+  color: white;
+  background-color: #93c54b; }
+  #blog.is-outlined {
+    color: #93c54b;
+    background-color: white; }
+
+#blog:hover {
+  border-color: #65B11F;
+  background-color: #65B11F; }

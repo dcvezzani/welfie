@@ -34,8 +34,8 @@ button.button {
     border-radius: $rounded-corner; 
 }
 
-a.button {
-  border-radius: $rounded-corner; 
+a.button, button.button {
+  border-radius: 6px; 
 }
 
 .card-footer {
@@ -43,11 +43,16 @@ a.button {
 }
 
 .card-footer-item:not(:last-child) {
-    border-right: 0;
+  border-right: 0;
+}
+
+.card-footer-item span {
+  width: 100%;
 }
 
 .button.is-primary {
   background-color: $primary-color;
+  width: 100%;
 }
 
 .button.is-primary.is-outlined {
@@ -60,13 +65,18 @@ a.button {
 .button.is-primary.is-outlined:hover, 
 .button.is-primary.is-outlined:focus, .button.is-primary.is-outlined:hover {
   background-color: $primary-color;
-  border-color: $primary-color;
+  border: 2px solid #3A4A57;
   color: white;
 }
 
-.button.is-warning {
-  background-color: $yellow-highlight;
-  color: #394a58;
+.button.is-warning, .button.is-warning:hover {
+    background-color: $dark-gray;
+    color: #fff;
+    border-radius: 6px; 
+}
+
+.button.is-warning:hover {
+    background-color: #616163;
 }
 
 .column {
@@ -78,4 +88,22 @@ a.button {
     max-width: 1152px;
     width: 1060px;
   }
+}
+
+.box {
+  border-radius: 0;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+  overflow: scroll;
+  max-height: 230px;
+}
+
+.tag:not(body).is-primary {
+    background-color: $primary-color;
+    color: $midnight-color;
+    color: white; 
+}
+
+html {
+  background-color: #F2F3F5;
 }

@@ -19,8 +19,8 @@ button.button {
   button.button svg.icon {
     margin-right: 10px !important; }
 
-a.button {
-  border-radius: 3px; }
+a.button, button.button {
+  border-radius: 6px; }
 
 .card-footer {
   border-top: 0; }
@@ -28,8 +28,12 @@ a.button {
 .card-footer-item:not(:last-child) {
   border-right: 0; }
 
+.card-footer-item span {
+  width: 100%; }
+
 .button.is-primary {
-  background-color: #1FB9C8; }
+  background-color: #1FB9C8;
+  width: 100%; }
 
 .button.is-primary.is-outlined {
   background-color: transparent;
@@ -40,12 +44,16 @@ a.button {
 .button.is-primary.is-outlined:hover,
 .button.is-primary.is-outlined:focus, .button.is-primary.is-outlined:hover {
   background-color: #1FB9C8;
-  border-color: #1FB9C8;
+  border: 2px solid #3A4A57;
   color: white; }
 
-.button.is-warning {
-  background-color: #fec92f;
-  color: #394a58; }
+.button.is-warning, .button.is-warning:hover {
+  background-color: #828283;
+  color: #fff;
+  border-radius: 6px; }
+
+.button.is-warning:hover {
+  background-color: #616163; }
 
 .column {
   padding: 20px; }
@@ -54,3 +62,18 @@ a.button {
   .container {
     max-width: 1152px;
     width: 1060px; } }
+
+.box {
+  border-radius: 0;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+  overflow: scroll;
+  max-height: 230px; }
+
+.tag:not(body).is-primary {
+  background-color: #1FB9C8;
+  color: #394a58;
+  color: white; }
+
+html {
+  background-color: #F2F3F5; }

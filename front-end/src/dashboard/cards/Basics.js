@@ -16,7 +16,7 @@ class BasicsCard extends Component {
                     />
                 </CardFooterItem>
                 <CardFooterItem>
-                    <DataTipButton isColor="primary" text="Get PLFS Blue" />
+                    <DataTipButton isColor="primary" text="Get Blue" />
                 </CardFooterItem>
             </CardFooter>
         );

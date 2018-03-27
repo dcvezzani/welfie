@@ -14,12 +14,11 @@ class InvestCard extends Component {
                     <DataTipButton
                         isColor="primary"
                         isOutlined
-                        text="Get Prof. Help"
+                        text="Get help"
                     />
                 </CardFooterItem>
                 <CardFooterItem>
                     <Button isColor="primary">
-                        <FAIcon iconType="external-link-alt" />
                         Go to 401(k)
                     </Button>
                 </CardFooterItem>

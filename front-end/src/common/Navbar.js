@@ -57,7 +57,7 @@ class NavBar extends Component {
         <NavbarMenu isActive={isActive} onClick={this.toggleNav}>
           <NavbarEnd>
             <NavbarItem>
-              <Button id="blog" isOutlined href="https://welfie.co/blog/">
+              <Button id="blog" href="https://welfie.co/blog/">
                 <span>Blog</span>
               </Button>
             </NavbarItem>
