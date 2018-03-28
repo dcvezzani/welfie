@@ -13,7 +13,6 @@ class InvestCard extends Component {
                 <CardFooterItem>
                     <DataTipButton
                         isColor="primary"
-                        isOutlined
                         text="Get help"
                     />
                 </CardFooterItem>

@@ -41,7 +41,6 @@ class SmartDollar extends Component {
                 <CardFooterItem>
                     <Button
                         isColor="primary"
-                        isOutlined
                         onClick={this.openModal}
                     >
                         Request Access

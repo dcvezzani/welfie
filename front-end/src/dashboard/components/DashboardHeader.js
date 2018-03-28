@@ -15,7 +15,7 @@ class DashboardHeader extends Component {
               <Column isSize={5}>
                 <h1 class="title nav-title">Dashboard</h1>
               </Column>
-              <Column isSize={5} hasTextAlign="right">
+              <Column isSize={5}>
                 <p className="welcome">Welcome, {user}!</p>
               </Column>
               <Column isSize={2}>

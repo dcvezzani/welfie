@@ -11,7 +11,6 @@ class AdviceSupportCard extends Component {
                 <CardFooterItem>
                     <DataTipButton
                         className="platinum"
-                        isOutlined
                         text="Learn More"
                     />
                 </CardFooterItem>

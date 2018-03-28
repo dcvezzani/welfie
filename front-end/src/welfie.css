@@ -63,17 +63,43 @@ a.button, button.button {
     max-width: 1152px;
     width: 1060px; } }
 
+.card.card-short .card-content .box,
 .box {
   border-radius: 0;
   -webkit-box-shadow: unset;
   box-shadow: unset;
   overflow: scroll;
-  max-height: 230px; }
+  max-height: 230px;
+  font-size: 12pt;
+  font-weight: 600;
+  color: #3A4A57; }
+
+.card.card-short .card-content .box {
+  max-height: 147px; }
+
+.box .tag {
+  font-size: 12pt;
+  font-weight: 600; }
 
 .tag:not(body).is-primary {
   background-color: #1FB9C8;
-  color: #394a58;
-  color: white; }
+  color: white;
+  text-transform: uppercase; }
+
+.card .tag.gold {
+  background-color: #FDC842;
+  color: #3A4A57;
+  text-transform: uppercase; }
 
 html {
   background-color: #F2F3F5; }
+
+.title {
+  color: #94C453;
+  /* font-size: 2rem; */
+  font-weight: 600;
+  line-height: 1.125; }
+
+.hero.is-success {
+  background-color: #88c100;
+  color: #fff; }

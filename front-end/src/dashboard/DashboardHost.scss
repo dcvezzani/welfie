@@ -45,7 +45,7 @@
         }
         button.gold {
             border-color: $gold;
-            color: white;
+            color: $midnight-color;
             background-color: $gold;
             &.is-outlined {
                 color: $gold;
@@ -84,7 +84,7 @@
 }
 
 .title-canvas.margin {
-    width: 2em;
+    width: 0.5em;
 }
 
 .action-button.short {
@@ -173,3 +173,5 @@
         height: auto;
     }
 }
+
+

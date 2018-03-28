@@ -11,7 +11,6 @@ class BasicsCard extends Component {
                 <CardFooterItem>
                     <DataTipButton
                         isColor="primary"
-                        isOutlined
                         text="Learn More"
                     />
                 </CardFooterItem>

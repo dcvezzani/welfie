@@ -8,7 +8,7 @@
   border-top: 5px solid #394a58;
   border-radius: 3px; }
   .card .card-header {
-    background-color: #394a58; }
+    background-color: #3A4A57; }
     .card .card-header p.card-header-title {
       justify-content: center;
       text-transform: uppercase;
@@ -33,7 +33,7 @@
     border: 2px solid #3A4A57; }
   .card.card-short button.gold {
     border-color: #FDC842;
-    color: white;
+    color: #3A4A57;
     background-color: #FDC842; }
     .card.card-short button.gold.is-outlined {
       color: #FDC842;
@@ -47,7 +47,7 @@
       background-color: white; }
   .card .tag.gold {
     background-color: #FDC842;
-    color: #394a58; }
+    color: #3A4A57; }
 
 .dashboard-background {
   background-color: #F2F3F5; }
@@ -59,7 +59,7 @@
   overflow: auto; }
 
 .title-canvas.margin {
-  width: 2em; }
+  width: 0.5em; }
 
 .action-button.short {
   display: none; }

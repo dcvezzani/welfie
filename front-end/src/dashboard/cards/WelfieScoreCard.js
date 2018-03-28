@@ -13,7 +13,7 @@ class WelfieScoreCard extends Component {
           <Button isColor="primary">Details</Button>
         </CardFooterItem>
         <CardFooterItem>
-          <Button isColor="primary" isOutlined>
+          <Button isColor="primary">
             Update
           </Button>
         </CardFooterItem>

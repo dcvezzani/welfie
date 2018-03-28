@@ -11,7 +11,6 @@ class PlanCard extends Component {
                 <CardFooterItem>
                     <DataTipButton
                         className="gold"
-                        isOutlined
                         text="Learn More"
                     />
                 </CardFooterItem>
@@ -25,12 +24,12 @@ class PlanCard extends Component {
             </CardFooter>
         );
         const content = (
-            <div>
+            <Box>
                 All the benefits of <Tag isColor="primary">Blue</Tag>{" "}
                 <em>PLUS</em> an affordable financial planning solution with
                 your own designated planning associate to make the journey with
                 you… and much more.
-            </div>
+            </Box>
         );
         return (
             <SingleColumnCard
@@ -39,7 +38,7 @@ class PlanCard extends Component {
                 subtitleText="From $150/year"
                 footerContent={footer}
             >
-                <Box>{content}</Box>
+                {content}
             </SingleColumnCard>
         );
     }
