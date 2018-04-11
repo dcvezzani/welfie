@@ -34,24 +34,6 @@ class NavBar extends Component {
               <img src={WelfieLogo} alt="Welfie Logo" />
             </Link>
           </NavbarItem>
-          <NavbarItem>
-            <Button
-              isColor="warning"
-              onClick={openConciergeModal}
-              isHidden="mobile"
-            >
-              <FAIcon iconType="question-circle" />
-              Need Help? Ask our Concierge
-            </Button>
-            <Button
-              isColor="warning"
-              onClick={openConciergeModal}
-              isHidden={["tablet", "desktop", "widescreen"]}
-            >
-              <FAIcon iconType="question-circle" />
-              Need Help?
-            </Button>
-          </NavbarItem>
           <NavbarBurger isActive={isActive} onClick={this.toggleNav} />
         </NavbarBrand>
         <NavbarMenu isActive={isActive} onClick={this.toggleNav}>
@@ -61,7 +43,7 @@ class NavBar extends Component {
                 <span>Blog</span>
               </Button>
             </NavbarItem>
-            <NavbarItem>
+            <NavbarItem className="loginButtonDisabled">
               <Button className="loginButton" onClick={openLoginModal}>
                 Client Login
               </Button>

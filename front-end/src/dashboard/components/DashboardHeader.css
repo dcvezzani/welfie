@@ -19,3 +19,6 @@ p.welcome {
   font-size: 1.2em;
   font-weight: bold;
   padding: 25px 0; }
+
+.concierge-button {
+  margin-top: 17px; }
