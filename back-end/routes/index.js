@@ -45,7 +45,7 @@ router.get('/login', function(req, res) {
 router.post('/login', function(req, res, next) {
   passport.authenticate('local-login', function(err, user, info) {
     if (err) { return next(err); }
-    if (!user) { return res.redirect(`/login?page=${req.body.secureLocation}`); }
+    if (!user) { return res.redirect(`/api/login?page=${req.body.secureLocation}`); }
 	  // if (!user) { res.render('login', { message: req.flash('loginMessage') }); }
     
     req.logIn(user, function(err) {
@@ -98,7 +98,7 @@ router.get('/signup', function(req, res) {
 router.post('/signup', function(req, res, next) {
   passport.authenticate('local-signup', function(err, user, info) {
     if (err) { return next(err); }
-    if (!user) { return res.redirect(`/signup?page=${req.body.secureLocation}`); }
+    if (!user) { return res.redirect(`/api/signup?page=${req.body.secureLocation}`); }
     req.logIn(user, function(err) {
       if (err) { return next(err); }
 
