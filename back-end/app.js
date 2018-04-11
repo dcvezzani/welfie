@@ -46,7 +46,7 @@ app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
 app.use(flash()); // use connect-flash for flash messages stored in session
 
-app.use('/', index);
+app.use('/api', index);
 app.use('/users', users);
 
 // catch 404 and forward to error handler
