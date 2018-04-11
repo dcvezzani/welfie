@@ -5,7 +5,8 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('welfie-back-end:server');
+var io = require('../io');
+var debug = require('debug')('cards-be:server');
 var http = require('http');
 
 /**
@@ -20,6 +21,13 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
+
+/**
+ * Init socket.io
+ */
+
+// var socketioPort = normalizePort(process.env.SOCKETIO_PORT || '3001');
+// io.init(server, socketioPort);
 
 /**
  * Listen on provided port, on all network interfaces.

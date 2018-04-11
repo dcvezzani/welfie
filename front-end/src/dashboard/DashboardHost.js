@@ -19,10 +19,10 @@ import "./DashboardHost.css";
 class DashboardHost extends Component {
     render() {
         return (
-            <div class="dashboard-background">
+            <div className="dashboard-background">
                 <ReactTooltip multiline place="top" effect="solid" />
                 <DashboardHeader
-                    user="Dave"
+                    user={localStorage.getItem('userEmail')}
                     adImageSource="http://www.fillmurray.com/g/300/150"
                 />
                 <Container className="card-container">

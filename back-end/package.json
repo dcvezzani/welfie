@@ -1,30 +1,39 @@
 {
-  "name": "welfie-back-end",
+  "name": "cards-be",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "watch": "PORT=3000 DEBUG=welfie-back-end.* ./node_modules/.bin/nodemon ./bin/www"
+    "start": "NODE_ENV=development nodemon ./bin/www --exec babel-node --presets es2015,stage-2"
   },
   "dependencies": {
-    "body-parser": "~1.18.2",
-    "bookshelf": "^0.12.1",
-    "cookie-parser": "~1.4.3",
-    "cors": "^2.8.4",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
     "debug": "~2.6.9",
-    "express": "~4.15.5",
-    "google-auth-library": "^1.2.1",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
     "jade": "~1.11.0",
-    "jsonwebtoken": "^8.1.1",
+    "jsonwebtoken": "^8.2.1",
+    "knex": "^0.14.4",
     "lodash": "^4.17.5",
-    "moment": "^2.20.1",
-    "morgan": "~1.9.0",
+    "method-override": "^2.3.10",
+    "mongoose": "^5.0.12",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4",
+    "pg": "^7.4.1",
     "serve-favicon": "~2.4.5",
-    "sqlite3": "^3.1.13"
-  },
-  "devDependencies": {
-    "knex": "^0.14.3",
-    "knex-migrate": "^1.5.1",
-    "nodemon": "^1.15.0"
+    "socket.io": "^2.1.0",
+    "sqlite3": "^4.0.0",
+    "uuid": "^3.2.1"
   }
 }

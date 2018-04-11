@@ -13,7 +13,7 @@ class DashboardHeader extends Component {
           <Container>
             <Columns>
               <Column isSize={5}>
-                <h1 class="title nav-title">Dashboard</h1>
+                <h1 className="title nav-title">Dashboard</h1>
               </Column>
               <Column isSize={5}>
                 <p className="welcome">Welcome, {user}!</p>

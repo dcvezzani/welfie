@@ -20,13 +20,13 @@ class DashboardCard extends Component {
         return (
             <Card className={className}>
                 <CardHeader>
-                    <div class="title-canvas margin" />
-                    <div class="title-canvas body">
+                    <div className="title-canvas margin" />
+                    <div className="title-canvas body">
                         <CardHeaderTitle hasTextAlign="centered">
                             {title}
                         </CardHeaderTitle>
                     </div>
-                    <div class="title-canvas margin" />
+                    <div className="title-canvas margin" />
                 </CardHeader>
                 <CardContent>
                     {subtitle}
@@ -39,7 +39,7 @@ class DashboardCard extends Component {
 }
 
 DashboardCard.propTypes = {
-    children: PropTypes.object,
+    children: PropTypes.node,
     title: PropTypes.string,
     subtitleText: PropTypes.string
 };

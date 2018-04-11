@@ -8,8 +8,12 @@ export const content =
 
 export const links = {
   WELFIE_VIMEO: "https://vimeo.com/256756826",
-  SMART_DOLLAR_VIMEO: "https://vimeo.com/256756934"
+  SMART_DOLLAR_VIMEO: "https://vimeo.com/256756934", 
+  AUTHENTICATION_BASE_URL: "https://welfie.co/api", 
+  xAUTHENTICATION_BASE_URL: "http://localhost:3000", 
 };
 
 export const thirdPartyText =
   "Provided by 3rd party<br /> registered investment advisor<br /> at negotiated discounted rates.<br /> Separate agreement required.";
+
+

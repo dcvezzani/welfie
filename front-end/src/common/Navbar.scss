@@ -32,13 +32,15 @@ button {
     &.loginButton {
         background-color: $green;
         color: #fff;
-        display: none; 
     }
 }
 
 .navbar-item img {
     max-height: 4rem;
     margin: 0 auto;
+}
+.navbar-item-disabled {
+  display: none; 
 }
 
 .button.social:not(:last-child) {

@@ -20,12 +20,14 @@ button {
   text-transform: uppercase; }
   button.loginButton {
     background-color: #93c54b;
-    color: #fff;
-    display: none; }
+    color: #fff; }
 
 .navbar-item img {
   max-height: 4rem;
   margin: 0 auto; }
+
+.navbar-item-disabled {
+  display: none; }
 
 .button.social:not(:last-child) {
   margin-right: 1em; }

@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import _ from "lodash";
+import classNames from "classnames";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import {
@@ -17,15 +19,25 @@ import WelfieLogo from "./assets/logo.png";
 import FAIcon from "./FAIcon";
 class NavBar extends Component {
   state = {
-    isActive: false
+    isActive: false, 
+    isLoggedIn: false, 
   };
 
   toggleNav = () => {
     this.setState({ isActive: !this.state.isActive });
   };
+
   render() {
-    const { isActive } = this.state;
-    const { openConciergeModal, openLoginModal } = this.props;
+    const { isActive, userEmail } = this.state;
+    const { openConciergeModal, openLoginModal, logout, getEmail } = this.props;
+
+    const navBarLoginClasses = classNames({
+      'navbar-item-disabled': (_.isNil(getEmail()) !== true), 
+    });
+    const navBarLogoutClasses = classNames({
+      'navbar-item-disabled': (_.isNil(getEmail()) === true), 
+    });
+      
     return (
       <Navbar className="is-fixed-top">
         <NavbarBrand>
@@ -61,9 +73,14 @@ class NavBar extends Component {
                 <span>Blog</span>
               </Button>
             </NavbarItem>
-            <NavbarItem>
+            <NavbarItem className={navBarLoginClasses}>
               <Button className="loginButton" onClick={openLoginModal}>
                 Client Login
+              </Button>
+            </NavbarItem>
+            <NavbarItem className={navBarLogoutClasses}>
+              <Button className="loginButton" onClick={logout}>
+                Client Logout {getEmail()}
               </Button>
             </NavbarItem>
             <NavbarDivider />

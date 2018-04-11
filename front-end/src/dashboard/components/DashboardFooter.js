@@ -12,8 +12,8 @@ class DashboardFooter extends Component {
           <Container>
             <Columns>
               <Column isSize={12}>
-                <div class="copyright">
-                  <p class="copyright-title">Welfie Inc.</p>
+                <div className="copyright">
+                  <p className="copyright-title">Welfie Inc.</p>
                   <p>Copyright 2018, all rights reserved</p>
                 </div>
               </Column>

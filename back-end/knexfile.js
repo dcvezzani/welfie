@@ -7,15 +7,7 @@ module.exports = {
     connection: {
       filename: './dev.sqlite3'
     }, 
-		useNullAsDefault: true, 
-  },
-
-  production: {
-    client: 'sqlite3',
-    connection: {
-      filename: './prod.sqlite3'
-    }, 
-		useNullAsDefault: true, 
+		useNullAsDefault: true,
   },
 
   // staging: {
@@ -33,7 +25,7 @@ module.exports = {
   //     tableName: 'knex_migrations'
   //   }
   // },
-  //
+
   // production: {
   //   client: 'postgresql',
   //   connection: {
