@@ -10,7 +10,7 @@ export const links = {
   WELFIE_VIMEO: "https://vimeo.com/256756826",
   SMART_DOLLAR_VIMEO: "https://vimeo.com/256756934", 
   AUTHENTICATION_BASE_URL: "https://welfie.co/api", 
-  xAUTHENTICATION_BASE_URL: "http://localhost:3000", 
+  xAUTHENTICATION_BASE_URL: "http://localhost:3000/api", 
 };
 
 export const thirdPartyText =

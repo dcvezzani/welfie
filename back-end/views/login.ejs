@@ -38,7 +38,7 @@
 
     <hr>
 
-    <p>Need an account? <a href="/api/signup">Signup</a></p>
+    <p>Need an account? <a href="/api/signup" class="link-with-search">Signup</a></p>
     <p>Or go <a href="<%= home %>">home</a>.</p>
 
 </div>
@@ -49,6 +49,16 @@
 <script>
 
   $(document).ready(() => {
+
+    $(".link-with-search").click(function(e){
+        e.preventDefault();//this will prevent the link trying to navigate to another page
+
+        let queryString = window.location.search.match(/^\?page=(.*)$/)[1]
+        console.log(['window.location.search', window.location.search, unescape(queryString)])
+
+        var href = $(this).attr("href");//get the href so we can navigate later
+        window.location = `${href}${window.location.search}`;
+    });
 
     $("#login").submit(function(e){
         e.preventDefault();//this will prevent the link trying to navigate to another page
