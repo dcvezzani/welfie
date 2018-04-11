@@ -85,7 +85,7 @@ router.post('/login', function(req, res, next) {
 /* GET signup. */
 router.get('/signup', function(req, res) {
 	// render the page and pass in any flash data if it exists
-	res.render('signup', { message: req.flash('signupMessage') }); 
+	res.render('signup', { home: APP_BASE_URL, message: req.flash('signupMessage') }); 
 });
 
 /* POST signup. */
