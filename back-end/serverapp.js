@@ -1,4 +1,4 @@
-# serverapp.js
+// serverapp.js
 require("babel-register");
-var server = require('./app');
+var server = require('./bin/www');
 
